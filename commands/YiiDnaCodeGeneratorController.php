@@ -1,6 +1,6 @@
 <?php
 
-namespace console\controllers;
+namespace app\commands;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Inflector;
@@ -15,6 +15,19 @@ class YiiDnaCodeGeneratorController extends \schmunk42\giiant\commands\BatchCont
 {
 
     //public $dataModelClassPath;
+
+    /*
+    public $modelNamespace = 'app\\models';
+    public $crudControllerNamespace = 'app\\controllers\\crud';
+    public $crudViewPath = '@app/views/crud';
+    public $crudPathPrefix = 'crud/';
+    */
+
+    //public $modelBaseClass = 'app\\models';
+    public $modelNamespace = 'app\\models';
+    public $crudControllerNamespace = 'app\\modules\\crud\\controllers';
+    public $crudViewPath = '@app/modules/crud/views';
+    public $crudPathPrefix = '';
 
     public $interactive = "0";
     public $overwrite = "1";
@@ -38,69 +51,25 @@ class YiiDnaCodeGeneratorController extends \schmunk42\giiant\commands\BatchCont
     public function actionIndex()
     {
 
-        require(dirname(__FILE__) . "/../../../../dna/components/AppBehaviorsConfigTrait.php");
-        require(dirname(__FILE__) . "/../../../../dna/components/DataModel.php");
+        //require(dirname(__FILE__) . "/../../../../dna/config/AppBehaviorsConfigTrait.php");
+        require(dirname(__FILE__) . "/../../../dna/config/DataModel.php");
 
         $crudModels = \DataModel::crudModels();
-        $qaModels = \DataModel::qaModels();
         $qaStateModels = \DataModel::qaStateModels();
-        $internalModels = \DataModel::internalModels();
 
         // merge
         $cruds = array_merge($crudModels, $qaStateModels);
 
         // init actions
         $actions = array();
-        //var_dump(__LINE__, $this->interactive);die();
+
         // generate hybrid CRUDs into application
         foreach ($cruds AS $model => $table) {
             $this->tables[] = $table;
-            /*
-            $action = array(
-                "codeModel" => "FullCrudCode",
-                "generator" => 'vendor.phundament.gii-template-collection.fullCrud.FullCrudGenerator',
-                "templates" => array(
-                    'hybrid' => dirname(__FILE__) . '/../../../vendor/phundament/gii-template-collection/fullCrud/templates/hybrid',
-                ),
-                "model" => array(
-                    "model" => "application.models." . $model,
-                    "controller" => lcfirst($model),
-                    "template" => "hybrid",
-                    "internalModels" => array_keys($internalModels),
-                )
-            );
-
-            if (in_array($model, array(
-                "ExamQuestion",
-                "ExamQuestionAlternative",
-                "HtmlChunk",
-            ))
-            ) {
-                $action["model"]["textEditor"] = "html5Editor";
-            }
-
-            $actions[] = $action;
-        }
-            */
-            /*
-        return array(
-            "actions" => $actions
-        );
-            */
-
         }
 
         if (false) {
-            $this->tables = array(
-                //"account",
-                "profile",
-                "social_link",
-                "contribution",
-                "composition_type",
-                "nav_tree_to_use_option",
-                "route",
-                "route_type",
-                //"p3_media",
+            $this->tables = array(//"foo",
             );
         }
 
@@ -184,14 +153,4 @@ class YiiDnaCodeGeneratorController extends \schmunk42\giiant\commands\BatchCont
         }
     }
 
-    protected function getYiiConfiguration()
-    {
-        $config = \yii\helpers\ArrayHelper::merge(
-            require(\Yii::getAlias('@app') . '/../common/config/main.php'),
-            require(\Yii::getAlias('@app') . '/../common/config/main-local.php'),
-            require(\Yii::getAlias('@app') . '/../console/config/main.php'),
-            require(\Yii::getAlias('@app') . '/../console/config/main-local.php')
-        );
-        return $config;
-    }
 }

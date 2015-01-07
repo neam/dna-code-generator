@@ -71,6 +71,10 @@ $config = [
             'defaultRoute' => 'profile',
             'admins'       => ['admin']
         ],
+        'crud' => [
+            'class' => 'app\modules\crud\Module',
+            'layout' => '@admin-views/layouts/main',
+        ],
     ],
     'params'     => [
         'appName'        => getenv('APP_NAME'),
