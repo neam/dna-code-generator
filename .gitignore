@@ -45,3 +45,6 @@ logs
 tests/_output/*
 backend
 local.php
+models
+modules/crud
+modules/ywuicrud
