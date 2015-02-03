@@ -33,6 +33,12 @@
     "issues": "https://github.com/neam/dna-code-generator/issues?state=open",
     "source": "https://github.com/neam/dna-code-generator"
   },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:slavcodev/yii2-yii-bridge.git"
+    }
+   ],
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
@@ -57,6 +63,7 @@
     "yiisoft/yii2-coding-standards": "2.*",
     "yiisoft/yii2-codeception": "2.*",
     "yiisoft/yii2-apidoc": "2.*",
+    "slavcodev/yii2-yii-bridge": "dev-master@dev",
     "schmunk42/yii2-giiant": "*"
   },
   "autoload": {
