@@ -1,6 +1,8 @@
 DNA Code Generator
 ====================
 
+> Please note: This project is en early development stages
+
 Code generator for generating various parts of a project using the [DNA project base](http://neamlabs.com/dna-project-base/).
 
 Installation
