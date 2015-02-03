@@ -1962,16 +1962,16 @@
         },
         {
             "name": "slavcodev/yii2-yii-bridge",
-            "version": "v0.1",
+            "version": "dev-added-console-support",
             "source": {
                 "type": "git",
-                "url": "https://github.com/slavcodev/yii2-yii-bridge.git",
-                "reference": "5bea0130956b8eb7f839d7dafad901a6049eb5d1"
+                "url": "https://github.com/motin/yii2-yii-bridge.git",
+                "reference": "76affd848d50d26db0152255cbee6fba12cdfa86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slavcodev/yii2-yii-bridge/zipball/5bea0130956b8eb7f839d7dafad901a6049eb5d1",
-                "reference": "5bea0130956b8eb7f839d7dafad901a6049eb5d1",
+                "url": "https://api.github.com/repos/motin/yii2-yii-bridge/zipball/76affd848d50d26db0152255cbee6fba12cdfa86",
+                "reference": "76affd848d50d26db0152255cbee6fba12cdfa86",
                 "shasum": ""
             },
             "require": {
@@ -2003,7 +2003,7 @@
                 "forum": "http://www.yiiframework.ru/forum/",
                 "source": "https://github.com/slavcodev/yii-bridge"
             },
-            "time": "2014-08-30 02:43:47"
+            "time": "2015-02-03 21:52:47"
         },
         {
             "name": "squizlabs/php_codesniffer",

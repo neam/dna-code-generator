@@ -36,7 +36,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "git@github.com:slavcodev/yii2-yii-bridge.git"
+      "url": "git@github.com:neam/yii2-yii-bridge.git"
     }
    ],
   "minimum-stability": "stable",
@@ -63,7 +63,7 @@
     "yiisoft/yii2-coding-standards": "2.*",
     "yiisoft/yii2-codeception": "2.*",
     "yiisoft/yii2-apidoc": "2.*",
-    "slavcodev/yii2-yii-bridge": "dev-master@dev",
+    "slavcodev/yii2-yii-bridge": "dev-added-console-support@dev",
     "schmunk42/yii2-giiant": "*"
   },
   "autoload": {
