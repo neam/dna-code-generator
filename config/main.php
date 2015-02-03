@@ -148,7 +148,7 @@ $console = [
 ];
 
 
-$allowedIPs = ['127.0.0.1', '::1', '192.168.59.*', '172.17.0.*'];
+$allowedIPs = ['127.0.0.1', '::1', '192.168.*.*', '172.17.0.*'];
 
 if (php_sapi_name() == 'cli') {
     // Console application
