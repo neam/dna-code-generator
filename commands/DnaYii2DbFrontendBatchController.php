@@ -11,8 +11,10 @@ use schmunk42\giiant\crud\providers\RangeProvider;
 use schmunk42\giiant\crud\providers\RelationProvider;
 use schmunk42\giiant\crud\providers\SelectProvider;
 
-class DnaYii2DbFrontendGeneratorController extends \schmunk42\giiant\commands\BatchController
+class DnaYii2DbFrontendBatchController extends \schmunk42\giiant\commands\BatchController
 {
+
+    public $crudGenerator = 'gii/giiant-crud';
 
     //public $dataModelClassPath;
 
@@ -50,9 +52,6 @@ class DnaYii2DbFrontendGeneratorController extends \schmunk42\giiant\commands\Ba
 
     public function actionIndex()
     {
-
-        require(DNA_PROJECT_PATH . "/dna/config/AppBehaviorsConfigTrait.php");
-        require(DNA_PROJECT_PATH . "/dna/config/DataModel.php");
 
         $crudModels = \DataModel::crudModels();
         $qaStateModels = \DataModel::qaStateModels();
@@ -144,7 +143,7 @@ class DnaYii2DbFrontendGeneratorController extends \schmunk42\giiant\commands\Ba
                 'providerList' => implode(',', $providers),
             ];
             //var_dump($params, $this->generate);
-            $route = 'gii/giiant-crud';
+            $route = $this->crudGenerator;;
             $app = \Yii::$app;
             $temp = new \yii\console\Application($config);
             $temp->runAction(ltrim($route, '/'), $params);
