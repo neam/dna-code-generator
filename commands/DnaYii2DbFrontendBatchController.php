@@ -27,6 +27,7 @@ class DnaYii2DbFrontendBatchController extends \schmunk42\giiant\commands\BatchC
 
     //public $modelBaseClass = 'app\\models';
     public $modelNamespace = 'app\\models';
+    public $searchModelNamespace = 'app\\models';
     public $crudControllerNamespace = 'app\\modules\\crud\\controllers';
     public $crudViewPath = '@app/modules/crud/views';
     public $crudPathPrefix = '';
@@ -134,7 +135,7 @@ class DnaYii2DbFrontendBatchController extends \schmunk42\giiant\commands\BatchC
                 'interactive' => $this->interactive,
                 'template' => 'default',
                 'modelClass' => $this->modelNamespace . '\\' . $name,
-                'searchModelClass' => $this->modelNamespace . '\\search\\' . $name . 'Search',
+                'searchModelClass' => $this->searchModelNamespace . '\\search\\' . $name . 'Search',
                 'controllerClass' => $this->crudControllerNamespace . '\\' . $name . 'Controller',
                 'viewPath' => $this->crudViewPath,
                 'pathPrefix' => $this->crudPathPrefix,
