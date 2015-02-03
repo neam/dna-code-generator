@@ -11,7 +11,7 @@ use schmunk42\giiant\crud\providers\RangeProvider;
 use schmunk42\giiant\crud\providers\RelationProvider;
 use schmunk42\giiant\crud\providers\SelectProvider;
 
-class YiiDnaCodeGeneratorController extends \schmunk42\giiant\commands\BatchController
+class DnaYii2DbFrontendGeneratorController extends \schmunk42\giiant\commands\BatchController
 {
 
     //public $dataModelClassPath;

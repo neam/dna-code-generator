@@ -25,9 +25,9 @@ When that is in place, run the code generator setup:
 
 You should then be able to start using the code generator.
 
-## Generate database administration views (Phundament 4 Crud)
+## Generate database administration views (uses the default Giiant CRUD templates)
 
-    ./yii yii-dna-code-generator
+    ./yii dna-yii2-db-frontend-generator
 
 Resources
 ---------
