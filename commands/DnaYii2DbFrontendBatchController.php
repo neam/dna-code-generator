@@ -64,7 +64,8 @@ class DnaYii2DbFrontendBatchController extends \schmunk42\giiant\commands\BatchC
         $actions = array();
 
         // generate hybrid CRUDs into application
-        foreach ($cruds AS $model => $table) {
+        foreach ($cruds AS $modelClass => $table) {
+            $this->tableNameMap[$table] = $modelClass;
             $this->tables[] = $table;
         }
 
@@ -73,8 +74,6 @@ class DnaYii2DbFrontendBatchController extends \schmunk42\giiant\commands\BatchC
             );
         }
 
-        var_dump($this->tables);
-        //die();
         return $this->modifiedActionIndex();
     }
 
@@ -86,6 +85,9 @@ class DnaYii2DbFrontendBatchController extends \schmunk42\giiant\commands\BatchC
     public function modifiedActionIndex()
     {
         echo "Running batch...\n";
+
+        var_dump($this->tables);
+        //die();
 
         $config = $this->getYiiConfiguration();
         $config['id'] = 'temp';
@@ -143,7 +145,7 @@ class DnaYii2DbFrontendBatchController extends \schmunk42\giiant\commands\BatchC
                 'baseControllerClass' => $this->crudBaseControllerClass,
                 'providerList' => implode(',', $providers),
             ];
-            //var_dump($params, $this->generate);
+            var_dump($params, $this->generate);
             $route = $this->crudGenerator;;
             $app = \Yii::$app;
             $temp = new \yii\console\Application($config);
