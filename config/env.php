@@ -3,8 +3,12 @@
 use \Dotenv;
 
 // Make app config available as PHP constants
-$root = __DIR__.'/..'.'/..'.'/..';
+define('DNA_PROJECT_PATH', __DIR__.'/..'.'/..'.'/..'.'/..'.'/..'.'/..');
+$root = DNA_PROJECT_PATH;
 require("$root/vendor/neam/php-app-config/include.php");
+
+$_ENV['SITENAME'] = SITENAME;
+$_ENV['SUPPORT_EMAIL'] = SUPPORT_EMAIL;
 
 Dotenv::load(__DIR__.'/..');
 

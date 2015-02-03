@@ -51,8 +51,8 @@ class YiiDnaCodeGeneratorController extends \schmunk42\giiant\commands\BatchCont
     public function actionIndex()
     {
 
-        //require(dirname(__FILE__) . "/../../../../dna/config/AppBehaviorsConfigTrait.php");
-        require(dirname(__FILE__) . "/../../../dna/config/DataModel.php");
+        require(DNA_PROJECT_PATH . "/dna/config/AppBehaviorsConfigTrait.php");
+        require(DNA_PROJECT_PATH . "/dna/config/DataModel.php");
 
         $crudModels = \DataModel::crudModels();
         $qaStateModels = \DataModel::qaStateModels();
