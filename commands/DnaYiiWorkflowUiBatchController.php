@@ -16,20 +16,21 @@ class DnaYiiWorkflowUiBatchController extends DnaYii2DbFrontendBatchController
 
     public $crudGenerator = 'gii/yii-workflow-ui-crud';
 
+    public $crudControllerNamespace = 'app\\modules\\ywuicrud\\controllers';
+    public $crudViewPath = '@app/modules/ywuicrud/views';
     public $modelNamespace = '';
 
     public function actionIndex()
     {
-        $crudModels = \DataModel::crudModels();
-        $qaStateModels = \DataModel::qaStateModels();
-        $cruds = array_merge($crudModels, $qaStateModels);
+        $cruds = \DataModel::expectedToWork();
 
-        foreach ($cruds AS $model => $table) {
-            require(DNA_PROJECT_PATH . "/dna/models/$model.php");
+        foreach ($cruds AS $modelClass => $table) {
+            require(DNA_PROJECT_PATH . "/dna/models/$modelClass.php");
+            $this->tableNameMap[$table] = $modelClass;
+            $this->tables[] = $table;
         }
 
-        return parent::actionIndex();
-
+        return $this->modifiedActionIndex();
     }
 
 }
