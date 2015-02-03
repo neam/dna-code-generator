@@ -1,6 +1,6 @@
 {
-  "name": "phundament/app",
-  "description": "12factor Application Template for Yii 2.0 Framework",
+  "name": "neam/dna-code-generator",
+  "description": "Code generator for generating various parts of a project using the [DNA project base](http://neamlabs.com/dna-project-base/)",
   "keywords": [
     "phundament",
     "yii2",
@@ -14,10 +14,15 @@
     "12factor",
     "dotenv"
   ],
-  "homepage": "http://www.phundament.com/",
+  "homepage": "https://github.com/neam/dna-code-generator",
   "type": "project",
   "license": "BSD-3-Clause",
   "authors": [
+    {
+      "name": "Fredrik Wollsén",
+      "email": "fredrik@neam.se",
+      "homepage": "http://neamlabs.com"
+    },
     {
       "name": "Tobias Munk",
       "email": "schmunk@usrbin.de",
@@ -25,8 +30,8 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/phundament/app/issues?state=open",
-    "source": "https://github.com/phundament/app"
+    "issues": "https://github.com/neam/dna-code-generator/issues?state=open",
+    "source": "https://github.com/neam/dna-code-generator"
   },
   "minimum-stability": "stable",
   "require": {

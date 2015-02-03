@@ -1,37 +1,34 @@
-Phundament 4.0.x-dev
+DNA Code Generator
 ====================
 
-> Please note: This is a `beta` version.
+Code generator for generating various parts of a project using the [DNA project base](http://neamlabs.com/dna-project-base/).
 
-Phundament is a 12factor PHP application template for Yii Framework 2.0.
-
-[![Build Status](https://travis-ci.org/phundament/app.svg?branch=4.0)](https://travis-ci.org/phundament/app)
-[![Total Downloads](https://poser.pugx.org/phundament/app/downloads.png)](https://packagist.org/packages/phundament/app)
-
-Quick-Start
+Installation
 -----------
 
-You can install _Phundament 4_ using [composer](https://getcomposer.org/download/)...
+You can install _Yii DNA Code Generator_ using [composer](https://getcomposer.org/download/)...
 
+    mkdir -p yiiapps/code-generator
     composer global require "fxp/composer-asset-plugin:1.0.0-beta4"
-    composer create-project --stability=dev phundament/app
+    composer create-project --stability=dev neam/dna-code-generator yiiapps/code-generator
 
-Create and adjust your environment configuration, eg. add a database...
+If you are starting from scratch, you will need to generate the dna project base and config:
 
-    cp .env-dist .env
-    edit .env
-    
-Run the application setup...
-    
-    ./yii app/setup
-    
-Open `http://path-to-app/web` or `http://path-to-app/web?r=admin` in your browser.
+    ./yii dna-project-base —projectPath=@project/dna/config/
+    ./yii dna-project-base-config —gdocid=hfyaYTYTafhjkjhafkuqwf —dnaConfigPath=@project/dna/config/
 
-> Note: Alternative installation methods with [Docker](https://github.com/phundament/app/blob/master/docs/51-docker.md), [fig](https://github.com/phundament/app/blob/master/docs/51-fig.md), [Vagrant & Docker](https://github.com/phundament/app/blob/master/docs/51-vagrant-docker.md) or [PaaS](https://github.com/phundament/app/blob/master/docs/52-paas.md) are availble in the documentation.
+When that is in place, run the code generator setup:
+    
+    yiiapps/code-generator/yii app/setup
+
+You should then be able to start using the code generator.
+
+## Generate database administration views (Phundament 4 Crud)
+
+    ./yii yii-dna-code-generator
 
 Resources
 ---------
 
-- [Documentation](docs/README.md)
-- [Project Source-Code](https://github.com/phundament/app)
-- [Website](http://phundament.com)
+- [Project Source-Code](https://github.com/neam/dna-code-generator)
+- [Website](http://neamlabs.com/dna-project-base/)
