@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b25dac59924c4bc4d05b43d5e77feb1c",
+    "hash": "83b3b8cadd21f4604457e333bc20c5ec",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -1695,6 +1695,55 @@
             "time": "2013-12-20 21:34:24"
         },
         {
+            "name": "neam/yii2-yii-workflow-ui-giiant-generator",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator.git",
+                "reference": "17de7806d29ad5f22b7dcf998353647cb17170eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/17de7806d29ad5f22b7dcf998353647cb17170eb",
+                "reference": "17de7806d29ad5f22b7dcf998353647cb17170eb",
+                "shasum": ""
+            },
+            "require": {
+                "schmunk42/yii2-giiant": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "neam\\yii_workflow_ui_giiant_generator\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "schmunk42\\yii_workflow_ui_giiant_generator\\": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrik Wollsén",
+                    "email": "fredrik@neam.se",
+                    "homepage": "http://neamlabs.com"
+                }
+            ],
+            "description": "Giiant-based Yii Workflow UI Generators for Yii 2 Framework",
+            "homepage": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator",
+            "keywords": [
+                "crud",
+                "gii",
+                "yii2"
+            ],
+            "support": {
+                "source": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/tree/develop",
+                "issues": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/issues"
+            },
+            "time": "2015-02-03 23:18:11"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v0.9.5",
             "source": {
@@ -1975,13 +2024,13 @@
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii": ">=1.1.16",
+                "yiisoft/yii": ">=1.1.15",
                 "yiisoft/yii2": "*"
             },
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "Slavcodev\\YiiBridge\\": ""
+                    "Slavcodev\\YiiBridge\\": "./src"
                 }
             },
             "license": [
@@ -1999,11 +2048,10 @@
                 "yii2"
             ],
             "support": {
-                "issues": "https://github.com/slavcodev/yii-bridge/issues",
-                "forum": "http://www.yiiframework.ru/forum/",
-                "source": "https://github.com/slavcodev/yii-bridge"
+                "issues": "https://github.com/slavcodev/yii2-yii-bridge/issues",
+                "source": "https://github.com/slavcodev/yii2-yii-bridge"
             },
-            "time": "2015-02-03 21:52:47"
+            "time": "2015-02-03 20:42:17"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -2448,7 +2496,9 @@
         "dmstr/yii2-app-command": 20,
         "dmstr/yii2-log": 20,
         "schmunk42/yii2-packaii": 20,
-        "schmunk42/yii2-markdocs-module": 20
+        "schmunk42/yii2-markdocs-module": 20,
+        "slavcodev/yii2-yii-bridge": 20,
+        "neam/yii2-yii-workflow-ui-giiant-generator": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
