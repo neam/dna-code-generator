@@ -1707,12 +1707,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator.git",
-                "reference": "a1020f8ee0622c062d36256a68753483885e03c0"
+                "reference": "0536935b327911e9629091f3443695f70893d1e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/a1020f8ee0622c062d36256a68753483885e03c0",
-                "reference": "a1020f8ee0622c062d36256a68753483885e03c0",
+                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/0536935b327911e9629091f3443695f70893d1e7",
+                "reference": "0536935b327911e9629091f3443695f70893d1e7",
                 "shasum": ""
             },
             "require": {
@@ -1737,7 +1737,7 @@
                     "homepage": "http://neamlabs.com"
                 }
             ],
-            "description": "Giiant-based Yii Workflow UI Generators for Yii 2 Framework",
+            "description": "Yii 1 Workflow UI Generators powered by Giiant, based on Gii 2 (Yii 2 Framework)",
             "homepage": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator",
             "keywords": [
                 "crud",
@@ -1748,7 +1748,7 @@
                 "source": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/tree/develop",
                 "issues": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/issues"
             },
-            "time": "2015-02-04 11:53:21"
+            "time": "2015-02-04 19:04:50"
         },
         {
             "name": "nikic/php-parser",
