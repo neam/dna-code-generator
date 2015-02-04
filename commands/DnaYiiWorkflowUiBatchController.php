@@ -16,7 +16,9 @@ class DnaYiiWorkflowUiBatchController extends DnaYii2DbFrontendBatchController
 
     public $crudGenerator = 'gii/yii-workflow-ui-crud';
 
-    public $crudControllerNamespace = 'app\\modules\\ywuicrud\\controllers';
+    public $crudControllerNamespace = '';
+    public $baseControllerClass = 'Controller';
+    //public $crudControllerPath = '@app/modules/ywuicrud/controllers';
     public $crudViewPath = '@app/modules/ywuicrud/views';
     public $modelNamespace = '';
 
