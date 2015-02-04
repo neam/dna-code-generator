@@ -1700,12 +1700,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator.git",
-                "reference": "17de7806d29ad5f22b7dcf998353647cb17170eb"
+                "reference": "6233405bdc3677cd4178b0eb5db127c71a18c117"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/17de7806d29ad5f22b7dcf998353647cb17170eb",
-                "reference": "17de7806d29ad5f22b7dcf998353647cb17170eb",
+                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/6233405bdc3677cd4178b0eb5db127c71a18c117",
+                "reference": "6233405bdc3677cd4178b0eb5db127c71a18c117",
                 "shasum": ""
             },
             "require": {
@@ -1717,7 +1717,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "schmunk42\\yii_workflow_ui_giiant_generator\\": ""
+                    "neam\\yii_workflow_ui_giiant_generator\\": ""
                 }
             },
             "license": [
@@ -1741,7 +1741,7 @@
                 "source": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/tree/develop",
                 "issues": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/issues"
             },
-            "time": "2015-02-03 23:18:11"
+            "time": "2015-02-04 01:34:18"
         },
         {
             "name": "nikic/php-parser",
