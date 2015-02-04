@@ -2,7 +2,7 @@
 
 // convenience variables
 $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
-$projectRoot = $applicationDirectory . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..';
+$projectRoot = $applicationDirectory . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..';
 $baseUrl = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SERVER['SCRIPT_NAME']) == '\\') ? '' :
     dirname($_SERVER['SCRIPT_NAME']);
 
@@ -51,13 +51,14 @@ $config = array(
 require($projectRoot . '/dna/dna-api-revisions/' . YII_DNA_REVISION . '/include.php');
 
 // Extensions' includes
-include($applicationDirectory . '/../vendor/neam/yii-dna-debug-modes-and-error-handling/config/error-handling.php');
-include($applicationDirectory . '/../vendor/neam/yii-dna-debug-modes-and-error-handling/config/debug-modes.php');
+//include($applicationDirectory . '/vendor/neam/yii-dna-debug-modes-and-error-handling/config/error-handling.php');
+//include($applicationDirectory . '/vendor/neam/yii-dna-debug-modes-and-error-handling/config/debug-modes.php');
 
-// This is a REST application, so we want' to handle errors accordingly.
+/*
 $config['components']['errorHandler'] = array(
     'class' => 'YiiDnaErrorHandler',
 );
+*/
 
 // Uncomment to easily see the active merged configuration
 //echo "<pre>";print_r($config);echo "</pre>";die();

@@ -2015,12 +2015,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/motin/yii2-yii-bridge.git",
-                "reference": "76affd848d50d26db0152255cbee6fba12cdfa86"
+                "reference": "b2e861700d1ec730d8959cf57c18c871f801ecba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/motin/yii2-yii-bridge/zipball/76affd848d50d26db0152255cbee6fba12cdfa86",
-                "reference": "76affd848d50d26db0152255cbee6fba12cdfa86",
+                "url": "https://api.github.com/repos/motin/yii2-yii-bridge/zipball/b2e861700d1ec730d8959cf57c18c871f801ecba",
+                "reference": "b2e861700d1ec730d8959cf57c18c871f801ecba",
                 "shasum": ""
             },
             "require": {
@@ -2051,7 +2051,7 @@
                 "issues": "https://github.com/slavcodev/yii2-yii-bridge/issues",
                 "source": "https://github.com/slavcodev/yii2-yii-bridge"
             },
-            "time": "2015-02-03 20:42:17"
+            "time": "2015-02-04 01:51:26"
         },
         {
             "name": "squizlabs/php_codesniffer",
