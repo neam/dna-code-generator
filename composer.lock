@@ -1781,12 +1781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator.git",
-                "reference": "0536935b327911e9629091f3443695f70893d1e7"
+                "reference": "71b887a2549b6958221d42789d432795d8564cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/0536935b327911e9629091f3443695f70893d1e7",
-                "reference": "0536935b327911e9629091f3443695f70893d1e7",
+                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/71b887a2549b6958221d42789d432795d8564cca",
+                "reference": "71b887a2549b6958221d42789d432795d8564cca",
                 "shasum": ""
             },
             "require": {
@@ -1809,6 +1809,11 @@
                     "name": "Fredrik Wollsén",
                     "email": "fredrik@neam.se",
                     "homepage": "http://neamlabs.com"
+                },
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
                 }
             ],
             "description": "Yii 1 Workflow UI Generators powered by Giiant, based on Gii 2 (Yii 2 Framework)",
@@ -1822,7 +1827,7 @@
                 "source": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/tree/develop",
                 "issues": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/issues"
             },
-            "time": "2015-02-04 19:04:50"
+            "time": "2015-02-05 20:33:04"
         },
         {
             "name": "nikic/php-parser",
