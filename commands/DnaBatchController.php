@@ -37,7 +37,8 @@ class DnaBatchController extends \schmunk42\giiant\commands\BatchController
         throw new Exception('Method should be overridden in child class');
         $this->tables = [];
         $this->providers = [];
-        return $this->modifiedActionIndex();
+        $this->generateModels();
+        $this->generateCrud();
     }
 
     /**
@@ -45,11 +46,11 @@ class DnaBatchController extends \schmunk42\giiant\commands\BatchController
      *
      * @param string $message the message to be echoed.
      */
-    public function modifiedActionIndex()
+    public function generateModels()
     {
-        echo "Running batch...\n";
+        echo "Running models batch...\n";
 
-        var_dump($this->tables);
+        //var_dump($this->tables);
         //die();
 
         $config = $this->getYiiConfiguration();
@@ -74,7 +75,7 @@ class DnaBatchController extends \schmunk42\giiant\commands\BatchController
             'generateLabelsFromComments' => '1',
             'tableNameMap' => $this->tableNameMap
         ];
-        //var_dump($params);
+        var_dump($params);
         $route = 'gii/giiant-model';
 
         $app = \Yii::$app;
@@ -83,6 +84,14 @@ class DnaBatchController extends \schmunk42\giiant\commands\BatchController
         unset($temp);
         \Yii::$app = $app;
         //}
+    }
+
+    public function generateCrud()
+    {
+        echo "Running crud batch...\n";
+
+        $config = $this->getYiiConfiguration();
+        $config['id'] = 'temp';
 
         // create CRUDs
         foreach ($this->tables AS $table) {

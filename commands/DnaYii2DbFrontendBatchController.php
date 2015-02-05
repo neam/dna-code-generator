@@ -62,7 +62,8 @@ class DnaYii2DbFrontendBatchController extends DnaBatchController
             RelationProvider::className()
         ];
 
-        return $this->modifiedActionIndex();
+        $this->generateModels();
+        $this->generateCrud();
     }
 
 }

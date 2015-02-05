@@ -29,7 +29,7 @@ class DnaYiiWorkflowUiBatchController extends DnaBatchController
 
         $this->providers = Generator::getCoreProviders();
 
-        return $this->modifiedActionIndex();
+        $this->generateCrud();
     }
 
 }
