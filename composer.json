@@ -69,7 +69,8 @@
     "yiisoft/yii2-apidoc": "2.*",
     "slavcodev/yii2-yii-bridge": "dev-added-console-support@dev",
     "neam/yii2-yii-workflow-ui-giiant-generator": "dev-develop@dev",
-    "schmunk42/yii2-giiant": "*"
+    "dmstr/yii2-bootstrap": "@dev",
+    "schmunk42/yii2-giiant": "dev-master@dev"
   },
   "autoload": {
     "psr-4": {

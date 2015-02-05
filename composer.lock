@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "83b3b8cadd21f4604457e333bc20c5ec",
+    "hash": "25ef2458df8c2b66a805a20b9ae86caa",
     "packages": [
         {
             "name": "2amigos/yii2-arrayquery-component",
@@ -1487,6 +1487,38 @@
     ],
     "packages-dev": [
         {
+            "name": "bower-asset/jquery.cookie",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/carhartl/jquery-cookie.git",
+                "reference": "7f88a4e631aba8a8c688fd8999ce6b9bcfd50718"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/carhartl/jquery-cookie/zipball/7f88a4e631aba8a8c688fd8999ce6b9bcfd50718",
+                "reference": "7f88a4e631aba8a8c688fd8999ce6b9bcfd50718",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.2"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "./jquery.cookie.js"
+                ],
+                "bower-asset-ignore": [
+                    "test",
+                    ".*",
+                    "*.json",
+                    "*.md",
+                    "*.txt",
+                    "Gruntfile.js"
+                ]
+            }
+        },
+        {
             "name": "bower-asset/typeahead.js",
             "version": "v0.10.5",
             "source": {
@@ -1613,6 +1645,48 @@
                 "markdown-extra"
             ],
             "time": "2014-10-20 23:24:21"
+        },
+        {
+            "name": "dmstr/yii2-bootstrap",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-bootstap.git",
+                "reference": "fde53c737f90412c1e97e148fce4d661e4905f37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-bootstap/zipball/fde53c737f90412c1e97e148fce4d661e4905f37",
+                "reference": "fde53c737f90412c1e97e148fce4d661e4905f37",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery.cookie": "1.4.*",
+                "yiisoft/yii2": "2.0.*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dmstr\\bootstrap\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Stebe",
+                    "email": "c.stebe@herzogkommunikation.de"
+                }
+            ],
+            "description": "yii2 bootstrap components and extensions from diemeisterei GmbH",
+            "keywords": [
+                "bootstrap",
+                "extension",
+                "yii2"
+            ],
+            "time": "2015-01-27 22:06:03"
         },
         {
             "name": "fzaninotto/faker",
@@ -1972,19 +2046,20 @@
         },
         {
             "name": "schmunk42/yii2-giiant",
-            "version": "0.2.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "3d9a405b6e701834d14584b0bde5066cc5aa9ed4"
+                "reference": "aed0bb31757800dd1311fe579a3642b20b0c32b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/3d9a405b6e701834d14584b0bde5066cc5aa9ed4",
-                "reference": "3d9a405b6e701834d14584b0bde5066cc5aa9ed4",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/aed0bb31757800dd1311fe579a3642b20b0c32b9",
+                "reference": "aed0bb31757800dd1311fe579a3642b20b0c32b9",
                 "shasum": ""
             },
             "require": {
+                "dmstr/yii2-bootstrap": "dev-master",
                 "yiisoft/yii2-gii": "~2.0.1"
             },
             "type": "yii2-extension",
@@ -2014,7 +2089,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-01-05 18:06:12"
+            "time": "2015-02-04 17:10:23"
         },
         {
             "name": "slavcodev/yii2-yii-bridge",
@@ -2505,7 +2580,9 @@
         "schmunk42/yii2-packaii": 20,
         "schmunk42/yii2-markdocs-module": 20,
         "slavcodev/yii2-yii-bridge": 20,
-        "neam/yii2-yii-workflow-ui-giiant-generator": 20
+        "neam/yii2-yii-workflow-ui-giiant-generator": 20,
+        "dmstr/yii2-bootstrap": 20,
+        "schmunk42/yii2-giiant": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
