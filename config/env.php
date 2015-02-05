@@ -23,3 +23,6 @@ Dotenv::required('YII_ENV',['dev','prod','test']);
 #Dotenv::required(['YII_TRACE_LEVEL']);
 Dotenv::required(['APP_NAME','APP_SUPPORT_EMAIL','APP_ADMIN_EMAIL']);
 Dotenv::required(['DATABASE_DSN','DATABASE_USER','DATABASE_PASSWORD']);
+
+// Require a config directive about what bootstrap include we should include (this script is used to activate providers for code generation)
+Dotenv::required('CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS');
