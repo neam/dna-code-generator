@@ -46,5 +46,13 @@ tests/_output/*
 backend
 local.php
 models
-modules/crud
-modules/ywuicrud
+
+/modules/crud/views/*
+/modules/crud/controllers/*
+/modules/ywuicrud/views/*
+/modules/ywuicrud/controllers/*
+
+!/modules/crud/views/.gitkeep
+!/modules/crud/controllers/.gitkeep
+!/modules/ywuicrud/views/.gitkeep
+!/modules/ywuicrud/controllers/.gitkeep
