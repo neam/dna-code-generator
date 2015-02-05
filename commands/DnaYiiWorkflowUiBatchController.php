@@ -4,23 +4,18 @@ namespace app\commands;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Inflector;
-use schmunk42\giiant\crud\providers\CallbackProvider;
-use schmunk42\giiant\crud\providers\DateTimeProvider;
-use schmunk42\giiant\crud\providers\EditorProvider;
-use schmunk42\giiant\crud\providers\RangeProvider;
-use schmunk42\giiant\crud\providers\RelationProvider;
-use schmunk42\giiant\crud\providers\SelectProvider;
+use neam\yii_workflow_ui_giiant_generator\crud\Generator;
 
-class DnaYiiWorkflowUiBatchController extends DnaYii2DbFrontendBatchController
+class DnaYiiWorkflowUiBatchController extends DnaBatchController
 {
 
     public $crudGenerator = 'gii/yii-workflow-ui-crud';
 
-    public $crudControllerNamespace = '';
     public $crudBaseControllerClass = 'Controller';
+    public $modelNamespace = '';
+    public $crudControllerNamespace = '';
     //public $crudControllerPath = '@app/modules/ywuicrud/controllers';
     public $crudViewPath = '@app/modules/ywuicrud/views';
-    public $modelNamespace = '';
 
     public function actionIndex()
     {
@@ -31,6 +26,8 @@ class DnaYiiWorkflowUiBatchController extends DnaYii2DbFrontendBatchController
             $this->tableNameMap[$table] = $modelClass;
             $this->tables[] = $table;
         }
+
+        $this->providers = Generator::getCoreProviders();
 
         return $this->modifiedActionIndex();
     }
