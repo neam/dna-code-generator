@@ -1781,12 +1781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator.git",
-                "reference": "4dc83729e82a32fe3e35ebc258386c7125e05661"
+                "reference": "151e33f94d46f59836d3ee36d7b2f366bdaee7a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/4dc83729e82a32fe3e35ebc258386c7125e05661",
-                "reference": "4dc83729e82a32fe3e35ebc258386c7125e05661",
+                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/151e33f94d46f59836d3ee36d7b2f366bdaee7a4",
+                "reference": "151e33f94d46f59836d3ee36d7b2f366bdaee7a4",
                 "shasum": ""
             },
             "require": {
@@ -1827,7 +1827,7 @@
                 "source": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/tree/develop",
                 "issues": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/issues"
             },
-            "time": "2015-02-06 13:20:51"
+            "time": "2015-02-06 17:52:44"
         },
         {
             "name": "nikic/php-parser",
