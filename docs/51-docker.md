@@ -81,7 +81,12 @@ docker run \
 
 ### Customizing startup and webserver configuration
 
-Copy the startup files from the container into your `build/` directory.
+You can build your custom container image on top of the [Phundament 4 Docker container](https://registry.hub.docker.com/u/phundament/app/) ([repository](https://github.com/phundament/docker)). 
+Just use the `FROM` instruction in your `Dockerfile`
+
+    FROM phundament/app
+
+Start or use a running container to copy the startup files into your `build/` directory.
 
     docker cp app_web_1:/root/run.sh build/
     docker cp app_web_1:/etc/nginx/sites-available/default build/
@@ -90,15 +95,18 @@ Copy the startup files from the container into your `build/` directory.
 
 Create a password file    
     
-    htpasswd -c build/htpasswd demo
+    htpasswd -c build/.htpasswd demo
 
-Update server configuration
+Update Nginx server configuration
 
-    auth_basic "Restricted";
-    auth_basic_user_file /etc/nginx/.htpasswd;
+    location  /  {
+        auth_basic "Restricted";
+        auth_basic_user_file /etc/nginx/.htpasswd;
+    }
     
 Add these updated configuration files to the build process    
 
     ADD build/.htpasswd /etc/nginx/.htpasswd
     ADD build/default /etc/nginx/sites-available/default
-    
+
+You can then `docker build` the image like described above.

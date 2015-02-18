@@ -79,6 +79,7 @@ class AppController extends BaseAppController
         $this->action('migrate', ['interactive' => $this->interactive]);
         $this->action('app/setup-admin-user', ['interactive' => $this->interactive]);
         $this->action('app/virtual-host', ['interactive' => $this->interactive]);
+        echo "Virtual-host configuration: ".getenv('VIRTUAL_HOST')."\n";
     }
 
     /**
@@ -291,6 +292,7 @@ class AppController extends BaseAppController
             $dbh->exec(
                 "CREATE DATABASE IF NOT EXISTS `$db`;
          GRANT ALL ON `$db`.* TO '$user'@'%' IDENTIFIED BY '$pass';
+         GRANT SUPER ON *.* TO '$user'@'%' IDENTIFIED BY '$pass';
          FLUSH PRIVILEGES;"
             )
             or die(print_r($dbh->errorInfo(), true));

@@ -4,6 +4,7 @@
   "keywords": [
     "phundament",
     "yii2",
+    "app",
     "framework",
     "application",
     "template",
@@ -46,36 +47,29 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
-    "vlucas/phpdotenv": "1.*",
-    "yiisoft/yii2-composer": "*",
+    "dektrium/yii2-user": "0.9.*",
+    "dmstr/yii2-adminlte-asset": "@stable",
+    "dmstr/yii2-app-command": "@stable",
+    "dmstr/yii2-log": "@stable",
+    "dmstr/yii2-migrate-command": "@stable",
+    "mikehaertl/php-shellcommand": "1.*",
+    "vlucas/phpdotenv": "1.1.*",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-bootstrap": "2.*",
-    "yiisoft/yii2-swiftmailer": "2.*",
-    "dektrium/yii2-user": "0.9.*",
-    "mikehaertl/php-shellcommand": "1.*",
-    "dmstr/yii2-app-command": "dev-master",
-    "dmstr/yii2-migrate-command": "*",
-    "dmstr/yii2-adminlte-asset": "*",
-    "dmstr/yii2-log": "dev-master",
-    "schmunk42/yii2-packaii": "dev-master",
-    "schmunk42/yii2-markdocs-module": "dev-master"
+    "yiisoft/yii2-composer": "*",
+    "yiisoft/yii2-swiftmailer": "2.*"
   },
   "require-dev": {
-    "yiisoft/yii2-debug": "2.*",
-    "yiisoft/yii2-gii": "2.*",
-    "yiisoft/yii2-faker": "2.*",
-    "yiisoft/yii2-coding-standards": "2.*",
-    "yiisoft/yii2-codeception": "2.*",
     "yiisoft/yii2-apidoc": "2.*",
+    "yiisoft/yii2-codeception": "2.*",
+    "yiisoft/yii2-coding-standards": "2.*",
+    "yiisoft/yii2-debug": "2.*",
+    "yiisoft/yii2-faker": "2.*",
     "slavcodev/yii2-yii-bridge": "dev-added-console-support@dev",
     "neam/yii2-yii-workflow-ui-giiant-generator": "dev-develop@dev",
     "dmstr/yii2-bootstrap": "@dev",
+    "yiisoft/yii2-gii": "2.*",
     "schmunk42/yii2-giiant": "dev-master@dev"
-  },
-  "autoload": {
-    "psr-4": {
-      "console\\helpers\\": "./console/helpers"
-    }
   },
   "scripts": {
     "post-create-project-cmd": [

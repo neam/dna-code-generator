@@ -11,7 +11,7 @@ $config = [
         'assetManager' => [
             'forceCopy'  => false, // Note: May degrade performance with Docker or VMs
             'linkAssets' => false, // Note: May also publish files, which are excluded in an asset bundle
-            'dirMode'    => 0777,
+            'dirMode'    => YII_ENV_PROD ? 0777 : null, // Note: For using mounted volumes or shared folders
             'bundles'    => [
                 #'yii\bootstrap\BootstrapAsset' => false, // provided by frontend/assets/web/app.css
             ],
@@ -57,14 +57,14 @@ $config = [
             'class'  => 'app\modules\admin\Module',
             'layout' => '@admin-views/layouts/main',
         ],
-        'docs'    => [
+        /*'docs'    => [
             'class'  => \schmunk42\markdocs\Module::className(),
             'layout' => '@app/views/layouts/container',
-        ],
-        'packaii' => [
+        ],*/
+        /*'packaii' => [
             'class'  => \schmunk42\packaii\Module::className(),
             'layout' => '@admin-views/layouts/main',
-        ],
+        ],*/
         'user'    => [
             'class'        => 'dektrium\user\Module',
             'layout'       => '@admin-views/layouts/main',
@@ -80,7 +80,6 @@ $config = [
         'appName'        => getenv('APP_NAME'),
         'adminEmail'     => getenv('APP_ADMIN_EMAIL'),
         'supportEmail'   => getenv('APP_SUPPORT_EMAIL'),
-        'copyrightBy'    => getenv('APP_COPYRIGHT'),
         'yii.migrations' => [
             '@dektrium/user/migrations',
         ]
@@ -94,6 +93,7 @@ $web = [
         'log'     => [
             'traceLevel' => getenv('YII_TRACE_LEVEL'),
             'targets'    => [
+                // log route handled by nginx process
                 [
                     'class'   => 'dmstr\log\SyslogTarget',
                     'prefix'  => function () {
@@ -103,6 +103,7 @@ $web = [
                     'logVars' => ['_GET', '_POST', '_FILES', '_COOKIE', '_SESSION'],
                     'enabled' => YII_DEBUG ? true : false,
                 ],
+                // standard file log route
                 [
                     'class'   => 'yii\log\FileTarget',
                     'levels'  => YII_DEBUG ? ['error', 'warning', 'info'] : ['error', 'warning'],

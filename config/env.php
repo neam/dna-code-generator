@@ -26,3 +26,4 @@ Dotenv::required(['DATABASE_DSN','DATABASE_USER','DATABASE_PASSWORD']);
 
 // Require a config directive about what bootstrap include we should include (this script is used to activate providers for code generation)
 Dotenv::required('CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS');
+Dotenv::setEnvironmentVariable('APP_VERSION', file_get_contents(__DIR__.'/../version'));
