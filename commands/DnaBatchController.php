@@ -109,7 +109,7 @@ class DnaBatchController extends \schmunk42\giiant\commands\BatchController
                 'baseControllerClass' => $this->crudBaseControllerClass,
                 'providerList' => implode(',', $this->providers),
             ];
-            var_dump($params, $this->generate);
+            var_dump($params);
             $route = $this->crudGenerator;;
             $app = \Yii::$app;
             $temp = new \yii\console\Application($config);

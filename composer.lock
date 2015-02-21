@@ -1600,16 +1600,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "aed0bb31757800dd1311fe579a3642b20b0c32b9"
+                "reference": "38301f6fe3cc6f141112f7cce90aec3006d58c1d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/aed0bb31757800dd1311fe579a3642b20b0c32b9",
-                "reference": "aed0bb31757800dd1311fe579a3642b20b0c32b9",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/38301f6fe3cc6f141112f7cce90aec3006d58c1d",
+                "reference": "38301f6fe3cc6f141112f7cce90aec3006d58c1d",
                 "shasum": ""
             },
             "require": {
-                "dmstr/yii2-bootstrap": "dev-master",
+                "dmstr/yii2-bootstrap": "*",
                 "yiisoft/yii2-gii": "~2.0.1"
             },
             "type": "yii2-extension",
@@ -1639,7 +1639,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-02-04 17:10:23"
+            "time": "2015-02-16 22:27:58"
         },
         {
             "name": "slavcodev/yii2-yii-bridge",
