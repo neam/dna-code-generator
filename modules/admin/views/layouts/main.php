@@ -36,7 +36,7 @@ $this->title = $this->title.' [Backend] '.Yii::$app->params['appName'];
 <header class="header">
     <a href="<?= \Yii::$app->homeUrl ?>" class="logo">
         <!-- Add the class icon to your logo image or logo icon to add the margining -->
-        Phundament 4
+        DNA Code Generator
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top" role="navigation">
@@ -152,7 +152,7 @@ $this->title = $this->title.' [Backend] '.Yii::$app->params['appName'];
                 </div>
             </form>-->
             <!-- /.search form -->
-sss
+
             <?php
             if (!\Yii::$app->user->isGuest) {
                 $menuItems = [
