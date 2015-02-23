@@ -41,6 +41,10 @@
     },
     {
       "type": "vcs",
+      "url": "git@github.com:neam/yii2-content-model-metadata-generators.git"
+    },
+    {
+      "type": "vcs",
       "url": "git@github.com:neam/yii2-yii-workflow-ui-giiant-generator.git"
     }
    ],
@@ -66,6 +70,7 @@
     "yiisoft/yii2-debug": "2.*",
     "yiisoft/yii2-faker": "2.*",
     "slavcodev/yii2-yii-bridge": "dev-added-console-support@dev",
+    "neam/yii2-content-model-metadata-generators": "dev-develop@dev",
     "neam/yii2-yii-workflow-ui-giiant-generator": "dev-develop@dev",
     "dmstr/yii2-bootstrap": "@dev",
     "yiisoft/yii2-gii": "2.*",

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "58270b312606665ff09a73383189cf00",
+    "hash": "616435fbd40bb25a0f2b34074c042c9e",
     "packages": [
         {
             "name": "bower-asset/admin-lte",
@@ -1321,6 +1321,58 @@
             "time": "2013-12-20 21:34:24"
         },
         {
+            "name": "neam/yii2-content-model-metadata-generators",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neam/yii2-content-model-metadata-generators.git",
+                "reference": "d87cdcfea08d942ada98f4174c8f4d844cbd9fb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neam/yii2-content-model-metadata-generators/zipball/d87cdcfea08d942ada98f4174c8f4d844cbd9fb3",
+                "reference": "d87cdcfea08d942ada98f4174c8f4d844cbd9fb3",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2-gii": "~2.0.1"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "neam\\yii_content_model_metadata_generators\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "neam\\yii_content_model_metadata_generators\\": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrik Wollsén",
+                    "email": "fredrik@neam.se",
+                    "homepage": "http://neamlabs.com"
+                }
+            ],
+            "description": "Content model metadata code generator powered by Gii (Yii 2 Framework)",
+            "homepage": "https://github.com/neam/yii2-content-model-metadata-generators",
+            "keywords": [
+                "content model",
+                "dna",
+                "gii",
+                "metadata",
+                "yii",
+                "yii2"
+            ],
+            "support": {
+                "source": "https://github.com/neam/yii2-content-model-metadata-generators/tree/develop",
+                "issues": "https://github.com/neam/yii2-content-model-metadata-generators/issues"
+            },
+            "time": "2015-02-23 09:57:10"
+        },
+        {
             "name": "neam/yii2-yii-workflow-ui-giiant-generator",
             "version": "dev-develop",
             "source": {
@@ -2177,6 +2229,7 @@
         "dmstr/yii2-log": 0,
         "dmstr/yii2-migrate-command": 0,
         "slavcodev/yii2-yii-bridge": 20,
+        "neam/yii2-content-model-metadata-generators": 20,
         "neam/yii2-yii-workflow-ui-giiant-generator": 20,
         "dmstr/yii2-bootstrap": 20,
         "schmunk42/yii2-giiant": 20
