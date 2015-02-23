@@ -33,6 +33,12 @@ class DnaYii2DbFrontendBatchController extends DnaBatchController
     public function actionIndex()
     {
 
+        // Require a config directive about what bootstrap include we should include (this script is used to activate providers for code generation)
+        $alias = getenv('CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS');
+        if (empty($alias)) {
+            throw new Exception("CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS not set");
+        }
+
         $crudModels = \DataModel::crudModels();
         $qaStateModels = \DataModel::qaStateModels();
 
