@@ -39,7 +39,7 @@ class DnaYii2DbFrontendBatchController extends DnaBatchController
             throw new Exception("CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS not set");
         }
 
-        $crudModels = \DataModel::crudModels();
+        $crudModels = \ItemTypes::where('generate_phundament_crud');
         $qaStateModels = \DataModel::qaStateModels();
 
         // merge

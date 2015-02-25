@@ -26,7 +26,7 @@ class DnaYiiWorkflowUiBatchController extends DnaBatchController
             throw new Exception("CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS not set");
         }
 
-        $cruds = \DataModel::workflowUiItemModels();
+        $cruds = \ItemTypes::where('generate_yii_workflow_ui_crud');
 
         foreach ($cruds AS $modelClass => $table) {
             require(DNA_PROJECT_PATH . "/dna/models/$modelClass.php");
