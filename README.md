@@ -8,18 +8,18 @@ Code generator for generating various parts of a web project using the [DNA proj
 Featured Generators
 ------------------
 
-## Content Model
+### Content Model
 
 * Yii 1 models based on your database schema
 * Yii 2 models based on your database schema
 * Yii 1 behavior/traits/rules/relations configuration and content model metadata based on the metadata about item types, attributes defined in a Google Spreadsheet or your account at [http://codegeneration.io]()
 
-## User Interfaces
+### User Interfaces
 
 * Backend CRUD for all database tables
 * Workflow-based CMS UI for producing rich content for content item types
 
-## Javascript-based Rich Web Applications
+### Javascript-based Rich Web Applications
 
 * (TODO) RESTful Content Delivery and Management API
 * (TODO) AngularJS CRUD Modules for content item types
@@ -47,7 +47,7 @@ You should then be able to start using the code generator.
 Usage
 -----
 
-## Generating Content Model Metadata
+### Generating Content Model Metadata
 
 This is the metadata about item types, attributes, their labels hints, flow steps, if they are translatable etc.
 
@@ -74,11 +74,11 @@ Main content model code metadata generation workflow goes as follows:
 
 From here, keep generating migrations, models and/or UI based on the current content model.
 
-### Generating `dna/content-model-metadata.json`
+#### Generating `dna/content-model-metadata.json`
 
     tools/code-generator/yii dna-content-model-metadata-json --configId=1 | jq '.' > dna/content-model-metadata.json
 
-### Generating item types helper class and model traits
+#### Generating item types helper class and model traits
 
 Requires an up to date `dna/content-model-metadata.json`.
 
@@ -100,7 +100,7 @@ Move generated model traits to dna:
 
 Before committing, make sure to autoformat all code in dna/models directory.
 
-### Generating models
+#### Generating models
 
 Requires an up to date generated item types helper class. Note: Uses giic installed and configured in the dna folder. Sample configuration: [https://gist.github.com/motin/2785bdfec2c9e1b3012c]()
 
@@ -117,9 +117,9 @@ If new tables have been added, the generated non-base model needs to be manually
 
 Before committing, make sure to autoformat all code in dna/models directory.
 
-## Generating UI
+### Generating UI
 
-### Generating workflow ui controllers and views
+#### Generating workflow ui controllers and views
 
 Requires up to date content model metadata helper class and model traits.
 
@@ -141,7 +141,7 @@ Now use git (SourceTree recommended) to stage the relevant generated changes and
 
 Updating code-generation logic is done by adding/tweaking/enhancing providers and configure what providers is used where by modifying `ui/yii-dna-cms/app/config/code-generation/provider-bootstrap.php`.
 
-### Generating database administration views (uses the default Giiant CRUD templates)
+#### Generating database administration views (uses the default Giiant CRUD templates)
 
 Updating the pristine generated files:
 
