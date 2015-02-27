@@ -5,6 +5,25 @@ DNA Code Generator
 
 Code generator for generating various parts of a web project using the [DNA project base](http://neamlabs.com/dna-project-base/).
 
+Featured Generators
+------------------
+
+## Content Model
+
+* Yii 1 models based on your database schema
+* Yii 2 models based on your database schema
+* Yii 1 behavior/traits/rules/relations configuration and content model metadata based on the metadata about item types, attributes defined in a Google Spreadsheet or your account at [http://codegeneration.io]()
+
+## User Interfaces
+
+* Backend CRUD for all database tables
+* Workflow-based CMS UI for producing rich content for content item types
+
+## Javascript-based Rich Web Applications
+
+* (TODO) RESTful Content Delivery and Management API
+* (TODO) AngularJS CRUD Modules for content item types
+
 Installation
 -----------
 
@@ -32,11 +51,19 @@ Usage
 
 This is the metadata about item types, attributes, their labels hints, flow steps, if they are translatable etc.
 
-Requires an account at http://codegeneration.io for visually managing the content model metadata. In the example below, Content Model Metadata with id 1 is used as an example. Update the links with the id of the content model you are using in your project.
+Requires an account at [http://codegeneration.io]() for visually managing the content model metadata. In the example below, Content Model Metadata with id 1 is used as an example. Update the links with the id of the content model you are using in your project.
+
+It is possible to maintain the metadata in a Google spreadsheet and copy paste back and forth between Codegeneration.io and Google Spreadsheets in order to keep them in sync. This is useful when collaboratively defining/enriching the metadata.
+
+The metadata is used when generating or rendering user interfaces and can be accessed in two ways:
+   1. From the PHP code it to use the public methods found in model methods and the static methods of the ItemTypes helper class
+   2. By parsing dna/content-model-metadata.json
+
+The behaviors/traits/rules/relations configuration for specific extensions commonly used dna-based projects is generated into each model's metadata trait. This makes it easy to see what extensions a specific model is actually using as well as to customize the configuration post code-generation.
 
 Main content model code metadata generation workflow goes as follows:
 
-1. Discuss content model and collaborate by editing in the google spreadsheet with cms metadata
+1. Discuss content model and collaborate by editing in the google spreadsheet with the metadata
 2. Perform db schema changes (adding migrations as necessary)
 3. Update list of item types [http://codegeneration.io/contentModelMetadata/edit/1?step=item-types](here) and save changes
 4. Copy relevant parts from the google spreadsheet to [http://codegeneration.io/contentModelMetadata/edit/1?step=item-type-attributes](here) and save changes
