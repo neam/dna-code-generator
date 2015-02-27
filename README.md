@@ -10,9 +10,9 @@ Installation
 
 You can install _DNA Code Generator_ using [composer](https://getcomposer.org/download/)...
 
-    mkdir -p yiiapps/code-generator
+    mkdir -p tools/code-generator
     composer global require "fxp/composer-asset-plugin:1.0.0-beta4"
-    composer create-project --stability=dev neam/dna-code-generator yiiapps/code-generator
+    composer create-project --stability=dev neam/dna-code-generator tools/code-generator
 
 If you are starting from scratch, you will need to generate the dna project base and config (TODO):
 
@@ -21,7 +21,7 @@ If you are starting from scratch, you will need to generate the dna project base
 
 When that is in place, run the code generator setup:
     
-    yiiapps/code-generator/yii app/setup
+    tools/code-generator/yii app/setup
 
 You should then be able to start using the code generator.
 
@@ -49,7 +49,7 @@ From here, keep generating migrations, models and/or UI based on the current con
 
 ### Generating `dna/content-model-metadata.json`
 
-    yiiapps/code-generator/yii dna-content-model-metadata-json --configId=1 | jq '.' > dna/content-model-metadata.json
+    tools/code-generator/yii dna-content-model-metadata-json --configId=1 | jq '.' > dna/content-model-metadata.json
 
 ### Generating item types helper class and model traits
 
@@ -57,19 +57,19 @@ Requires an up to date `dna/content-model-metadata.json`.
 
 Updating the pristine generated helper class:
 
-    yiiapps/code-generator/yii gii/content-model-metadata-helper --template=yii --jsonPathAlias=@project/dna/content-model-metadata.json --overwrite=1 --interactive=0
+    tools/code-generator/yii gii/content-model-metadata-helper --template=yii --jsonPathAlias=@project/dna/content-model-metadata.json --overwrite=1 --interactive=0
 
 Move generated helper class to dna:
 
-    mv yiiapps/code-generator/helpers/*.php dna/config/
+    mv tools/code-generator/helpers/*.php dna/config/
 
 Updating the pristine generated model traits:
 
-    yiiapps/code-generator/yii gii/content-model-metadata-model-trait --template=yii --jsonPathAlias=@project/dna/content-model-metadata.json --itemType='*' --interactive=0 --overwrite=1
+    tools/code-generator/yii gii/content-model-metadata-model-trait --template=yii --jsonPathAlias=@project/dna/content-model-metadata.json --itemType='*' --interactive=0 --overwrite=1
 
 Move generated model traits to dna:
 
-    mv yiiapps/code-generator/models/metadata/traits/*Trait.php dna/models/metadata/traits/
+    mv tools/code-generator/models/metadata/traits/*Trait.php dna/models/metadata/traits/
 
 Before committing, make sure to autoformat all code in dna/models directory.
 
@@ -98,45 +98,45 @@ Requires up to date content model metadata helper class and model traits.
 
 Updating the pristine generated files:
 
-    export CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS=@project/yiiapps/internal-yii-frontend/app/config/code-generation/provider-bootstrap.php
-    yiiapps/code-generator/yii dna-yii-workflow-ui-batch
+    export CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS=@project/ui/yii-dna-cms/app/config/code-generation/provider-bootstrap.php
+    tools/code-generator/yii dna-yii-workflow-ui-batch
 
 Move generated controllers to internal yii frontend:
 
-    mv yiiapps/code-generator/modules/ywuicrud/controllers/* yiiapps/internal-yii-frontend/app/controllers/
+    mv tools/code-generator/modules/ywuicrud/controllers/* ui/yii-dna-cms/app/controllers/
 
 Move generated views to internal yii frontend:
 
-    cp -r yiiapps/code-generator/modules/ywuicrud/views/* yiiapps/internal-yii-frontend/app/views/
-    rm -r yiiapps/code-generator/modules/ywuicrud/views/*
+    cp -r tools/code-generator/modules/ywuicrud/views/* ui/yii-dna-cms/app/views/
+    rm -r tools/code-generator/modules/ywuicrud/views/*
 
 Now use git (SourceTree recommended) to stage the relevant generated changes and discard the changes that overwrote customly crafted parts that is not generated.
 
-Updating code-generation logic is done by adding/tweaking/enhancing providers and configure what providers is used where by modifying `yiiapps/internal-yii-frontend/app/config/code-generation/provider-bootstrap.php`.
+Updating code-generation logic is done by adding/tweaking/enhancing providers and configure what providers is used where by modifying `ui/yii-dna-cms/app/config/code-generation/provider-bootstrap.php`.
 
 ### Generating database administration views (uses the default Giiant CRUD templates)
 
 Updating the pristine generated files:
 
-    export CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS=@project/yiiapps/internal-db-yii2-frontend/config/code-generation/provider-bootstrap.php
-    yiiapps/code-generator/yii dna-yii2-db-frontend-batch
+    export CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS=@project/ui/yii2-phundament/config/code-generation/provider-bootstrap.php
+    tools/code-generator/yii dna-yii2-db-frontend-batch
 
 Move generated controllers to internal db frontend:
 
-    mv yiiapps/code-generator/modules/crud/controllers/* yiiapps/internal-db-yii2-frontend/modules/crud/controllers/
+    mv tools/code-generator/modules/crud/controllers/* ui/yii2-phundament/modules/crud/controllers/
 
 Move generated yii2 models to internal db frontend:
 
-    mv yiiapps/code-generator/models/*.php yiiapps/internal-db-yii2-frontend/models/
+    mv tools/code-generator/models/*.php ui/yii2-phundament/models/
 
 Move generated views to internal db frontend:
 
-    cp -r yiiapps/code-generator/modules/crud/views/* yiiapps/internal-yii-frontend/app/views/
-    rm -r yiiapps/code-generator/modules/crud/views/*
+    cp -r tools/code-generator/modules/crud/views/* ui/yii-dna-cms/app/views/
+    rm -r tools/code-generator/modules/crud/views/*
 
 Now use git (SourceTree recommended) to stage the relevant generated changes and discard the changes that overwrote customly crafted parts that is not generated.
 
-Updating code-generation logic is done by adding/tweaking/enhancing providers and configure what providers is used where by modifying `yiiapps/internal-db-yii2-frontend/config/code-generation/provider-bootstrap.php`.
+Updating code-generation logic is done by adding/tweaking/enhancing providers and configure what providers is used where by modifying `ui/yii2-phundament/config/code-generation/provider-bootstrap.php`.
 
 Resources
 ---------
