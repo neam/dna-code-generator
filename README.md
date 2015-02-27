@@ -8,16 +8,18 @@ Code generator for generating various parts of a web project using the [DNA proj
 Featured Generators
 ------------------
 
+All of the below are generated into the project's 12-factor app and deployed side by side with each other at different nginx locations.
+
 ### Content Model
 
 * Yii 1 models based on your database schema
+* Yii 1 behavior/traits/rules/relations configuration, as well as labels, hints etc based on the metadata defined in a Google Spreadsheet or your account at [http://codegeneration.io]()
 * Yii 2 models based on your database schema
-* Yii 1 behavior/traits/rules/relations configuration and content model metadata based on the metadata about item types, attributes defined in a Google Spreadsheet or your account at [http://codegeneration.io]()
 
 ### User Interfaces
 
-* Backend CRUD for all database tables
-* Workflow-based CMS UI for producing rich content for content item types
+* Yii 1 workflow/wizard-based CMS UI for producing rich translatable content based on your content model metadata
+* Yii 2 CRUD for all database tables (thanks to [Phundament](http://phundament.com/))
 
 ### Javascript-based Rich Web Applications
 
@@ -49,7 +51,7 @@ Usage
 
 ### Generating Content Model Metadata
 
-This is the metadata about item types, attributes, their labels hints, flow steps, if they are translatable etc.
+This is the metadata about item types, attributes, their labels hints, workflow/wizard steps, if they are translatable etc.
 
 Requires an account at [http://codegeneration.io]() for visually managing the content model metadata. In the example below, Content Model Metadata with id 1 is used as an example. Update the links with the id of the content model you are using in your project.
 
