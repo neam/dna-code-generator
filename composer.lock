@@ -1326,12 +1326,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/yii2-content-model-metadata-generators.git",
-                "reference": "8564deb946b77a6fb57b1e67efac015d9aa9a3a4"
+                "reference": "158590073a85859e5ed2b195c815e6e4c76caea3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/yii2-content-model-metadata-generators/zipball/8564deb946b77a6fb57b1e67efac015d9aa9a3a4",
-                "reference": "8564deb946b77a6fb57b1e67efac015d9aa9a3a4",
+                "url": "https://api.github.com/repos/neam/yii2-content-model-metadata-generators/zipball/158590073a85859e5ed2b195c815e6e4c76caea3",
+                "reference": "158590073a85859e5ed2b195c815e6e4c76caea3",
                 "shasum": ""
             },
             "require": {
@@ -1370,7 +1370,7 @@
                 "source": "https://github.com/neam/yii2-content-model-metadata-generators/tree/develop",
                 "issues": "https://github.com/neam/yii2-content-model-metadata-generators/issues"
             },
-            "time": "2015-02-25 01:06:27"
+            "time": "2015-03-12 14:41:25"
         },
         {
             "name": "neam/yii2-yii-workflow-ui-giiant-generator",
