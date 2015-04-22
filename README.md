@@ -1,14 +1,14 @@
 DNA Code Generator
 ====================
 
-> Please note: This project is en early development stages
+> Please note: This project is in early development stages
 
 Code generator for generating various parts of a web project using the [DNA project base](http://neamlabs.com/dna-project-base/).
 
 Featured Generators
 ------------------
 
-All of the below are generated into the project's 12-factor app and deployed side by side with each other at different nginx locations.
+All of the below are generated into the project's 12-factor app and deployed side by side with each other at different nginx locations, sharing project codebase.
 
 ### Content Model
 
