@@ -49,6 +49,8 @@ You should then be able to start using the code generator.
 Usage
 -----
 
+docker-stack local run phpfiles /bin/bash
+
 ### Generating Content Model Metadata
 
 This is the metadata about item types, attributes, their labels hints, workflow/wizard steps, if they are translatable etc.
@@ -105,6 +107,8 @@ Before committing, make sure to autoformat all code in dna/models directory.
 
 #### Generating models
 
+Operates on item types marked as "generate_phundament_crud" and "is_preparable".
+
 Requires an up to date generated item types helper class. Note: Uses giic installed and configured in the dna folder. Sample configuration: [https://gist.github.com/motin/2785bdfec2c9e1b3012c]()
 
     mkdir -p dna/code-generation/giic/
@@ -113,8 +117,10 @@ Requires an up to date generated item types helper class. Note: Uses giic instal
 Updating the pristine generated models and copying base and metadata models to dna:
 
     php dna/vendor/schmunk42/giic/giic.php giic generate dna.code-generation.giic.models
-    cp models/base/Base*.php ../models/base/
-    cp models/metadata/Metadata*.php ../models/metadata/
+    mkdir -p dna/models/base/
+    mkdir -p dna/models/metadata/
+    cp dna/code-generation/models/base/Base*.php dna/models/base/
+    cp dna/code-generation/models/metadata/Metadata*.php dna/models/metadata/
 
 If new tables have been added, the generated non-base model needs to be manually copied since only base models are copied automatically.
 
@@ -123,6 +129,8 @@ Before committing, make sure to autoformat all code in dna/models directory.
 ### Generating UI
 
 #### Generating workflow ui controllers and views
+
+Operates on item types marked as "is_workflow_item".
 
 Requires up to date content model metadata helper class and model traits.
 
@@ -145,6 +153,8 @@ Now use git (SourceTree recommended) to stage the relevant generated changes and
 Updating code-generation logic is done by adding/tweaking/enhancing providers and configure what providers is used where by modifying `ui/yii-dna-cms/app/config/code-generation/provider-bootstrap.php`.
 
 #### Generating database administration views (uses the default Giiant CRUD templates)
+
+Operates on item types marked as "generate_phundament_crud".
 
 Updating the pristine generated files:
 
