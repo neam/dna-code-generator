@@ -98,6 +98,7 @@ Updating the pristine generated model traits:
 
 Move generated model traits to dna:
 
+    mkdir -p dna/models/metadata/traits/
     mv tools/code-generator/models/metadata/traits/*Trait.php dna/models/metadata/traits/
 
 Before committing, make sure to autoformat all code in dna/models directory.
