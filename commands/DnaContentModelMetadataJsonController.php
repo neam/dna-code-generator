@@ -28,11 +28,31 @@ class DnaContentModelMetadataJsonController extends \yii\console\Controller
     public function actionIndex()
     {
         require(DNA_PROJECT_PATH . "/dna/models/ContentModelMetadata.php");
-        $cmm = \ContentModelMetadata::model()->findByPk($this->configId);
-        if (empty($cmm)) {
-            throw new ErrorException("There is no ContentModelMetadata record with id {$this->configId}");
+
+        // Allow comma-separated list of config ids to include in export
+        if (strpos($this->configId, ",") !== false) {
+            $configIds = explode(",", $this->configId);
+        } else {
+            $configIds = [$this->configId];
         }
-        echo Json::encode($cmm->export());
+
+        // First content model metadata exports as usual
+        $configId = array_shift($configIds);
+        $firstCmm = \ContentModelMetadata::model()->findByPk($configId);
+        if (empty($firstCmm)) {
+            throw new ErrorException("There is no ContentModelMetadata record with id {$configId}");
+        }
+
+        // The rest are superimposed on the first content model metadata to create a joint export of the correct format
+        foreach ($configIds as $configId) {
+            $cmm = \ContentModelMetadata::model()->findByPk($configId);
+            if (empty($cmm)) {
+                throw new ErrorException("There is no ContentModelMetadata record with id {$configId}");
+            }
+            $firstCmm->itemTypes = array_merge($firstCmm->itemTypes, $cmm->itemTypes);
+        }
+
+        echo Json::encode($firstCmm->export());
     }
 
 }
