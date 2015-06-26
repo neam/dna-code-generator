@@ -1380,12 +1380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-dna-project-base-model-generators.git",
-                "reference": "aa921e0296e5a515068a77f73e0778658eb294df"
+                "reference": "18538f75ed30d82fb1e4d309683a7a6451fb0c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-dna-project-base-model-generators/zipball/aa921e0296e5a515068a77f73e0778658eb294df",
-                "reference": "aa921e0296e5a515068a77f73e0778658eb294df",
+                "url": "https://api.github.com/repos/neam/gii2-dna-project-base-model-generators/zipball/18538f75ed30d82fb1e4d309683a7a6451fb0c90",
+                "reference": "18538f75ed30d82fb1e4d309683a7a6451fb0c90",
                 "shasum": ""
             },
             "require": {
@@ -1424,7 +1424,7 @@
                 "source": "https://github.com/neam/gii2-dna-project-base-model-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-dna-project-base-model-generators/issues"
             },
-            "time": "2015-06-26 08:17:55"
+            "time": "2015-06-26 10:12:33"
         },
         {
             "name": "neam/gii2-restful-api-generators",

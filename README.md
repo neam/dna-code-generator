@@ -107,24 +107,16 @@ Before committing, make sure to autoformat all code in dna/models directory.
 
 #### Generating models
 
-Operates on item types marked as "generate_phundament_crud" and "is_preparable".
+Operates on item types marked as "generate_phundament_crud" and "is_preparable". (currently also qa state models todo remove legacy dep)
 
-Requires an up to date generated item types helper class. Note: Uses giic installed and configured in the dna folder. Sample configuration: [https://gist.github.com/motin/2785bdfec2c9e1b3012c]()
-
-    mkdir -p dna/code-generation/giic/
-    git clone https://gist.github.com/motin/2785bdfec2c9e1b3012c dna/code-generation/giic/models
+Requires an up to date generated item types helper class. 
 
 Updating the pristine generated models and copying base and metadata models to dna:
 
-    php dna/vendor/schmunk42/giic/giic.php giic generate dna.code-generation.giic.models
     mkdir -p dna/models/base/
     mkdir -p dna/models/metadata/
-    cp dna/code-generation/models/base/Base*.php dna/models/base/
-    cp dna/code-generation/models/metadata/Metadata*.php dna/models/metadata/
-
-If new tables have been added, the generated non-base model needs to be manually copied since only base models are copied automatically.
-
-Before committing, make sure to autoformat all code in dna/models directory.
+    tools/code-generator/yii dna-model-batch
+    tools/code-generator/vendor/neam/gii2-dna-project-base-model-generators/yii1_model/copy-models.sh dna/models
 
 ### Generating UI
 

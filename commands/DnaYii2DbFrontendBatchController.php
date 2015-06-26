@@ -72,4 +72,49 @@ class DnaYii2DbFrontendBatchController extends DnaBatchController
         $this->generateCrud();
     }
 
+    /**
+     * This command echoes what you have entered as the message.
+     *
+     * @param string $message the message to be echoed.
+     */
+    public function generateModels()
+    {
+        echo "Running models batch...\n";
+
+        //var_dump($this->tables);
+        //die();
+
+        $config = $this->getYiiConfiguration();
+        $config['id'] = 'temp';
+
+        // create models
+        //foreach ($this->tables AS $table) {
+        #var_dump($this->tableNameMap, $table);exit;
+        $table = '*';
+        $params = [
+            'overwrite' => $this->overwrite,
+            'interactive' => $this->interactive,
+            'template' => 'default',
+            'ns' => $this->modelNamespace,
+            'db' => $this->modelDb,
+            'tableName' => $table,
+            'tablePrefix' => $this->tablePrefix,
+            'generateModelClass' => $this->extendedModels,
+            'modelClass' => isset($this->tableNameMap[$table]) ? $this->tableNameMap[$table] :
+                    Inflector::camelize($table), // TODO: setting is not recognized in giiant
+            'baseClass' => $this->modelBaseClass,
+            'generateLabelsFromComments' => '1',
+            'tableNameMap' => $this->tableNameMap
+        ];
+        var_dump($params);
+        $route = 'gii/giiant-model';
+
+        $app = \Yii::$app;
+        $temp = new \yii\console\Application($config);
+        $temp->runAction(ltrim($route, '/'), $params);
+        unset($temp);
+        \Yii::$app = $app;
+        //}
+    }
+
 }

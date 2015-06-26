@@ -45,14 +45,16 @@ logs
 tests/_output/*
 backend
 local.php
-models
+/models/*
 
 /modules/crud/views/*
 /modules/crud/controllers/*
 /modules/ywuicrud/views/*
 /modules/ywuicrud/controllers/*
+/modules/dnamodels/models/*
 
 !/modules/crud/views/.gitkeep
 !/modules/crud/controllers/.gitkeep
 !/modules/ywuicrud/views/.gitkeep
 !/modules/ywuicrud/controllers/.gitkeep
+!/modules/dnamodels/models/.gitkeep
