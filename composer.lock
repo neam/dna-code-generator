@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "616435fbd40bb25a0f2b34074c042c9e",
+    "hash": "6acc137f442ba0e5a267e3d37e0c6cbc",
     "packages": [
         {
             "name": "bower-asset/admin-lte",
@@ -1199,12 +1199,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dmstr/yii2-bootstap.git",
+                "url": "https://github.com/dmstr/yii2-bootstrap.git",
                 "reference": "96d556196d7dccb79e9dc465b8bc228c883c1111"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-bootstap/zipball/96d556196d7dccb79e9dc465b8bc228c883c1111",
+                "url": "https://api.github.com/repos/dmstr/yii2-bootstrap/zipball/96d556196d7dccb79e9dc465b8bc228c883c1111",
                 "reference": "96d556196d7dccb79e9dc465b8bc228c883c1111",
                 "shasum": ""
             },
@@ -1323,17 +1323,17 @@
             "time": "2013-12-20 21:34:24"
         },
         {
-            "name": "neam/yii2-content-model-metadata-generators",
+            "name": "neam/gii2-content-model-metadata-generators",
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/neam/yii2-content-model-metadata-generators.git",
-                "reference": "8e4b89e725009a554ef07756f4036ddc6a9f73a0"
+                "url": "https://github.com/neam/gii2-content-model-metadata-generators.git",
+                "reference": "0ab6debe8f96b4efbcb00c268607d89b2023d4c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/yii2-content-model-metadata-generators/zipball/8e4b89e725009a554ef07756f4036ddc6a9f73a0",
-                "reference": "8e4b89e725009a554ef07756f4036ddc6a9f73a0",
+                "url": "https://api.github.com/repos/neam/gii2-content-model-metadata-generators/zipball/0ab6debe8f96b4efbcb00c268607d89b2023d4c1",
+                "reference": "0ab6debe8f96b4efbcb00c268607d89b2023d4c1",
                 "shasum": ""
             },
             "require": {
@@ -1341,11 +1341,11 @@
             },
             "type": "yii2-extension",
             "extra": {
-                "bootstrap": "neam\\yii_content_model_metadata_generators\\Bootstrap"
+                "bootstrap": "neam\\gii2_content_model_metadata_generators\\Bootstrap"
             },
             "autoload": {
                 "psr-4": {
-                    "neam\\yii_content_model_metadata_generators\\": ""
+                    "neam\\gii2_content_model_metadata_generators\\": ""
                 }
             },
             "license": [
@@ -1358,8 +1358,8 @@
                     "homepage": "http://neamlabs.com"
                 }
             ],
-            "description": "Content model metadata code generator powered by Gii (Yii 2 Framework)",
-            "homepage": "https://github.com/neam/yii2-content-model-metadata-generators",
+            "description": "Content model metadata (behaviors, traits, relations configuration) code generator powered by Gii (Yii 2 Framework)",
+            "homepage": "https://github.com/neam/gii2-content-model-metadata-generators",
             "keywords": [
                 "content model",
                 "dna",
@@ -1369,23 +1369,75 @@
                 "yii2"
             ],
             "support": {
-                "source": "https://github.com/neam/yii2-content-model-metadata-generators/tree/develop",
-                "issues": "https://github.com/neam/yii2-content-model-metadata-generators/issues"
+                "source": "https://github.com/neam/gii2-content-model-metadata-generators/tree/develop",
+                "issues": "https://github.com/neam/gii2-content-model-metadata-generators/issues"
             },
-            "time": "2015-03-16 10:13:23"
+            "time": "2015-06-26 07:36:36"
         },
         {
-            "name": "neam/yii2-yii-workflow-ui-giiant-generator",
+            "name": "neam/gii2-dna-project-base-model-generators",
             "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator.git",
-                "reference": "e14607b1ed5327ebb87c0ccd08fbd99a44cd702f"
+                "url": "https://github.com/neam/gii2-dna-project-base-model-generators.git",
+                "reference": "aa921e0296e5a515068a77f73e0778658eb294df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/yii2-yii-workflow-ui-giiant-generator/zipball/e14607b1ed5327ebb87c0ccd08fbd99a44cd702f",
-                "reference": "e14607b1ed5327ebb87c0ccd08fbd99a44cd702f",
+                "url": "https://api.github.com/repos/neam/gii2-dna-project-base-model-generators/zipball/aa921e0296e5a515068a77f73e0778658eb294df",
+                "reference": "aa921e0296e5a515068a77f73e0778658eb294df",
+                "shasum": ""
+            },
+            "require": {
+                "schmunk42/yii2-giiant": "*",
+                "yiisoft/yii2-gii": "~2.0.1"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "neam\\gii2_dna_project_base_generators\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "neam\\gii2_dna_project_base_generators\\": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrik Wollsén",
+                    "email": "fredrik@neam.se",
+                    "homepage": "http://neamlabs.com"
+                }
+            ],
+            "description": "DNA project base model code generator powered by Giiant, based on Gii (Yii 2 Framework)",
+            "homepage": "https://github.com/neam/gii2-dna-project-base-model-generators",
+            "keywords": [
+                "dna",
+                "gii",
+                "model",
+                "yii",
+                "yii2"
+            ],
+            "support": {
+                "source": "https://github.com/neam/gii2-dna-project-base-model-generators/tree/develop",
+                "issues": "https://github.com/neam/gii2-dna-project-base-model-generators/issues"
+            },
+            "time": "2015-06-26 08:17:55"
+        },
+        {
+            "name": "neam/gii2-restful-api-generators",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neam/gii2-restful-api-generators.git",
+                "reference": "e9adf300ed70ba6b29fe43e56b787692c7e67879"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/e9adf300ed70ba6b29fe43e56b787692c7e67879",
+                "reference": "e9adf300ed70ba6b29fe43e56b787692c7e67879",
                 "shasum": ""
             },
             "require": {
@@ -1393,11 +1445,11 @@
             },
             "type": "yii2-extension",
             "extra": {
-                "bootstrap": "neam\\yii_workflow_ui_giiant_generator\\Bootstrap"
+                "bootstrap": "neam\\gii2_restful_api_generators\\Bootstrap"
             },
             "autoload": {
                 "psr-4": {
-                    "neam\\yii_workflow_ui_giiant_generator\\": ""
+                    "neam\\gii2_restful_api_generators\\": ""
                 }
             },
             "license": [
@@ -1415,18 +1467,74 @@
                     "homepage": "http://www.usrbin.de"
                 }
             ],
-            "description": "Yii 1 Workflow UI Generators powered by Giiant, based on Gii 2 (Yii 2 Framework)",
-            "homepage": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator",
+            "description": "Yii (currently 1.1 only) RESTful API CRUD Generation from Yii 1 Active Records with generated Content Model Metadata. Inspired by Giiant, extending Gii 2 (Yii 2 Framework)",
+            "homepage": "https://github.com/neam/gii2-restful-api-generators",
             "keywords": [
+                "angular",
                 "crud",
                 "gii",
                 "yii2"
             ],
             "support": {
-                "source": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/tree/develop",
-                "issues": "https://github.com/neam/yii2-yii-workflow-ui-giiant-generator/issues"
+                "source": "https://github.com/neam/gii2-restful-api-generators/tree/develop",
+                "issues": "https://github.com/neam/gii2-restful-api-generators/issues"
             },
-            "time": "2015-02-25 23:08:59"
+            "time": "2015-06-26 07:36:05"
+        },
+        {
+            "name": "neam/gii2-workflow-ui-generators",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neam/gii2-workflow-ui-generators.git",
+                "reference": "6f47af981f5adc559cacd773ef189eaaa6d94aec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/6f47af981f5adc559cacd773ef189eaaa6d94aec",
+                "reference": "6f47af981f5adc559cacd773ef189eaaa6d94aec",
+                "shasum": ""
+            },
+            "require": {
+                "schmunk42/yii2-giiant": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "neam\\gii2_workflow_ui_generators\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "neam\\gii2_workflow_ui_generators\\": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrik Wollsén",
+                    "email": "fredrik@neam.se",
+                    "homepage": "http://neamlabs.com"
+                },
+                {
+                    "name": "Tobias Munk",
+                    "email": "schmunk@usrbin.de",
+                    "homepage": "http://www.usrbin.de"
+                }
+            ],
+            "description": "Yii 1 and AngularJS Workflow UI Generation from Yii 1 Active Records with generated Content Model Metadata. Inspired by Giiant, extending Gii 2 (Yii 2 Framework)",
+            "homepage": "https://github.com/neam/gii2-workflow-ui-generators",
+            "keywords": [
+                "angular",
+                "crud",
+                "gii",
+                "yii2"
+            ],
+            "support": {
+                "source": "https://github.com/neam/gii2-workflow-ui-generators/tree/develop",
+                "issues": "https://github.com/neam/gii2-workflow-ui-generators/issues"
+            },
+            "time": "2015-06-26 07:31:04"
         },
         {
             "name": "nikic/php-parser",
@@ -1658,7 +1766,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/fa50e65238a39ad9ce9a99c0f2f59748b6fb38d0",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/d099f8ab9ae3e7016e97e8e00f06a2d453ee4fa2",
                 "reference": "fa50e65238a39ad9ce9a99c0f2f59748b6fb38d0",
                 "shasum": ""
             },
@@ -2231,8 +2339,10 @@
         "dmstr/yii2-log": 0,
         "dmstr/yii2-migrate-command": 0,
         "slavcodev/yii2-yii-bridge": 20,
-        "neam/yii2-content-model-metadata-generators": 20,
-        "neam/yii2-yii-workflow-ui-giiant-generator": 20,
+        "neam/gii2-content-model-metadata-generators": 20,
+        "neam/gii2-dna-project-base-model-generators": 20,
+        "neam/gii2-restful-api-generators": 20,
+        "neam/gii2-workflow-ui-generators": 20,
         "dmstr/yii2-bootstrap": 20,
         "schmunk42/yii2-giiant": 20
     },
