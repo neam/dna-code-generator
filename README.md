@@ -141,7 +141,7 @@ Now use git (SourceTree recommended) to stage the relevant generated changes and
 
 #### Generating workflow ui controllers and views
 
-Operates on item types marked as "is_workflow_item".
+Operates on item types marked as "generate_yii_workflow_ui_crud".
 
 Requires up to date content model metadata helper class and model traits.
 
@@ -150,11 +150,11 @@ Updating the pristine generated files:
     export CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS=@project/ui/yii-dna-cms/app/config/code-generation/provider-bootstrap.php
     tools/code-generator/yii dna-yii-workflow-ui-batch
 
-Move generated controllers to internal yii frontend:
+Move generated yii controllers to cms:
 
     mv tools/code-generator/modules/ywuicrud/controllers/* ui/yii-dna-cms/app/controllers/
 
-Move generated views to internal yii frontend:
+Move generated yii views to cms:
 
     cp -r tools/code-generator/modules/ywuicrud/views/* ui/yii-dna-cms/app/views/
     rm -r tools/code-generator/modules/ywuicrud/views/*
