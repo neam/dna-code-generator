@@ -4,18 +4,18 @@ namespace app\commands;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Inflector;
-use neam\yii_workflow_ui_giiant_generator\crud\Generator;
 use yii\base\Exception;
+use neam\gii2_workflow_ui_generators\yii1_crud\Generator;
 
 class DnaYiiWorkflowUiBatchController extends DnaBatchController
 {
 
-    public $crudGenerator = 'gii/yii-workflow-ui-crud';
+    public $crudGenerator = 'gii/workflow-ui-yii1-crud';
 
     public $crudBaseControllerClass = 'Controller';
     public $modelNamespace = '';
     public $crudControllerNamespace = '';
-    //public $crudControllerPath = '@app/modules/ywuicrud/controllers';
+    public $crudControllerPath = '@app/modules/ywuicrud/controllers';
     public $crudViewPath = '@app/modules/ywuicrud/views';
 
     public function actionIndex()
@@ -30,7 +30,12 @@ class DnaYiiWorkflowUiBatchController extends DnaBatchController
         $cruds = \ItemTypes::where('generate_yii_workflow_ui_crud');
 
         foreach ($cruds AS $modelClass => $table) {
-            require(DNA_PROJECT_PATH . "/dna/models/$modelClass.php");
+            $modelPath = DNA_PROJECT_PATH . "/dna/models/$modelClass.php";
+            if (!is_readable($modelPath)) {
+                echo "No model exists at $modelPath\n";
+                continue;
+            }
+            require($modelPath);
             $this->tableNameMap[$table] = $modelClass;
             $this->tables[] = $table;
         }
@@ -38,6 +43,7 @@ class DnaYiiWorkflowUiBatchController extends DnaBatchController
         $this->providers = Generator::getCoreProviders();
 
         $this->generateCrud();
+
     }
 
 }
