@@ -4,6 +4,7 @@ namespace app\commands;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Inflector;
+use yii\base\Exception;
 use schmunk42\giiant\crud\providers\CallbackProvider;
 use schmunk42\giiant\crud\providers\DateTimeProvider;
 use schmunk42\giiant\crud\providers\EditorProvider;

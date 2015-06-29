@@ -5,6 +5,7 @@ namespace app\commands;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Inflector;
 use neam\yii_workflow_ui_giiant_generator\crud\Generator;
+use yii\base\Exception;
 
 class DnaYiiWorkflowUiBatchController extends DnaBatchController
 {
