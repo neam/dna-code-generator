@@ -52,9 +52,15 @@ local.php
 /modules/ywuicrud/views/*
 /modules/ywuicrud/controllers/*
 /modules/dnamodels/models/*
+/modules/yiirestapi/blueprints/*
+/modules/yiirestapi/controllers/*
+/modules/yiirestapi/models/*
 
 !/modules/crud/views/.gitkeep
 !/modules/crud/controllers/.gitkeep
 !/modules/ywuicrud/views/.gitkeep
 !/modules/ywuicrud/controllers/.gitkeep
 !/modules/dnamodels/models/.gitkeep
+!/modules/yiirestapi/blueprints/.gitkeep
+!/modules/yiirestapi/controllers/.gitkeep
+!/modules/yiirestapi/models/.gitkeep

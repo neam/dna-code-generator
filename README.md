@@ -23,8 +23,8 @@ All of the below are generated into the project's 12-factor app and deployed sid
 
 ### Javascript-based Rich Web Applications
 
-* (TODO) RESTful Content Delivery and Management API
 * (TODO) AngularJS CRUD Modules for content item types
+* RESTful Content Delivery and Management API
 
 Installation
 -----------
@@ -117,6 +117,25 @@ Updating the pristine generated models and copying base and metadata models to d
     mkdir -p dna/models/metadata/
     tools/code-generator/yii dna-model-batch
     tools/code-generator/vendor/neam/gii2-dna-project-base-model-generators/yii1_model/copy-models.sh dna/models
+
+#### Generating RESTful API
+
+Operates on item types marked as "generate_yii_rest_api_crud".
+
+Updating the pristine generated files:
+
+    tools/code-generator/yii dna-rest-api-batch
+
+Move generated yii rest api controllers to rest-api:
+
+    cp -r tools/code-generator/modules/yiirestapi/controllers/* external-apis/rest-api/app/modules/v0/controllers/
+    rm -r tools/code-generator/modules/yiirestapi/controllers/*
+    
+Move generated yii rest api models to rest api:
+
+    tools/code-generator/vendor/neam/gii2-restful-api-generators/yii1_rest_model/copy-models.sh external-apis/rest-api/app/modules/v0/models
+
+Now use git (SourceTree recommended) to stage the relevant generated changes and discard the changes that overwrote customly crafted parts that is not generated.
 
 ### Generating UI
 
