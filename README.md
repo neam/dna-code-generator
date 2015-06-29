@@ -23,8 +23,8 @@ All of the below are generated into the project's 12-factor app and deployed sid
 
 ### Javascript-based Rich Web Applications
 
-* (TODO) AngularJS CRUD Modules for content item types
 * RESTful Content Delivery and Management API
+* AngularJS CRUD Modules for content item types
 
 Installation
 -----------
@@ -158,6 +158,25 @@ Move generated yii views to cms:
 
     cp -r tools/code-generator/modules/ywuicrud/views/* ui/yii-dna-cms/app/views/
     rm -r tools/code-generator/modules/ywuicrud/views/*
+
+Now use git (SourceTree recommended) to stage the relevant generated changes and discard the changes that overwrote customly crafted parts that is not generated.
+
+Updating code-generation logic is done by adding/tweaking/enhancing providers and configure what providers is used where by modifying `ui/yii-dna-cms/app/config/code-generation/provider-bootstrap.php`.
+
+#### Generating angularjs ui
+
+Operates on item types marked as "".
+
+Requires up to date content model metadata helper class and model traits.
+
+Updating the pristine generated files:
+
+    export CODE_GENERATOR_BOOTSTRAP_INCLUDE_ALIAS=@project/ui/angular-frontend-code-generation/provider-bootstrap.php
+    tools/code-generator/yii dna-angular-workflow-ui-batch
+
+Move generated angular modules to angular frontend:
+
+    mv tools/code-generator/modules/wuingcrud/crud/* ui/angular-frontend-dna/app/crud/
 
 Now use git (SourceTree recommended) to stage the relevant generated changes and discard the changes that overwrote customly crafted parts that is not generated.
 

@@ -55,6 +55,7 @@ local.php
 /modules/yiirestapi/blueprints/*
 /modules/yiirestapi/controllers/*
 /modules/yiirestapi/models/*
+/modules/wuingcrud/crud/*
 
 !/modules/crud/views/.gitkeep
 !/modules/crud/controllers/.gitkeep
@@ -64,3 +65,4 @@ local.php
 !/modules/yiirestapi/blueprints/.gitkeep
 !/modules/yiirestapi/controllers/.gitkeep
 !/modules/yiirestapi/models/.gitkeep
+!/modules/wuingcrud/crud/.gitkeep
