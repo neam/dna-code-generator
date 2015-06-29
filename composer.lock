@@ -1328,12 +1328,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-content-model-metadata-generators.git",
-                "reference": "0ab6debe8f96b4efbcb00c268607d89b2023d4c1"
+                "reference": "40e2906079fa17d738ff925c9c2d83b847a5290d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-content-model-metadata-generators/zipball/0ab6debe8f96b4efbcb00c268607d89b2023d4c1",
-                "reference": "0ab6debe8f96b4efbcb00c268607d89b2023d4c1",
+                "url": "https://api.github.com/repos/neam/gii2-content-model-metadata-generators/zipball/40e2906079fa17d738ff925c9c2d83b847a5290d",
+                "reference": "40e2906079fa17d738ff925c9c2d83b847a5290d",
                 "shasum": ""
             },
             "require": {
@@ -1372,7 +1372,7 @@
                 "source": "https://github.com/neam/gii2-content-model-metadata-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-content-model-metadata-generators/issues"
             },
-            "time": "2015-06-26 07:36:36"
+            "time": "2015-06-29 22:23:02"
         },
         {
             "name": "neam/gii2-dna-project-base-model-generators",
@@ -1436,7 +1436,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/e9adf300ed70ba6b29fe43e56b787692c7e67879",
+                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/86dad81328e3b7ddce1df45aa20bf94ab01d6c1f",
                 "reference": "e9adf300ed70ba6b29fe43e56b787692c7e67879",
                 "shasum": ""
             },
@@ -1491,7 +1491,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/6f47af981f5adc559cacd773ef189eaaa6d94aec",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/9cf19f77eb0bf59922ef9f23dd847dc781beedd5",
                 "reference": "6f47af981f5adc559cacd773ef189eaaa6d94aec",
                 "shasum": ""
             },
@@ -1766,7 +1766,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/d099f8ab9ae3e7016e97e8e00f06a2d453ee4fa2",
+                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/d2163d79ff5f4b76635121c3597728d8e3b83093",
                 "reference": "fa50e65238a39ad9ce9a99c0f2f59748b6fb38d0",
                 "shasum": ""
             },
