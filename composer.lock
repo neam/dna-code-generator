@@ -1432,16 +1432,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-restful-api-generators.git",
-                "reference": "e9adf300ed70ba6b29fe43e56b787692c7e67879"
+                "reference": "86dad81328e3b7ddce1df45aa20bf94ab01d6c1f"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/86dad81328e3b7ddce1df45aa20bf94ab01d6c1f",
-                "reference": "e9adf300ed70ba6b29fe43e56b787692c7e67879",
+                "reference": "86dad81328e3b7ddce1df45aa20bf94ab01d6c1f",
                 "shasum": ""
             },
             "require": {
-                "schmunk42/yii2-giiant": "*"
+                "neam/gii2-dna-project-base-model-generators": "*",
+                "neam/gii2-workflow-ui-generators": "*"
             },
             "type": "yii2-extension",
             "extra": {
@@ -1479,7 +1480,7 @@
                 "source": "https://github.com/neam/gii2-restful-api-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-restful-api-generators/issues"
             },
-            "time": "2015-06-26 07:36:05"
+            "time": "2015-06-29 22:22:11"
         },
         {
             "name": "neam/gii2-workflow-ui-generators",
