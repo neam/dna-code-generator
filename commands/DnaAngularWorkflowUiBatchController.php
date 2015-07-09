@@ -56,7 +56,7 @@ class DnaAngularWorkflowUiBatchController extends DnaBatchController
             echo '<script src="crud/' . Inflector::camel2id($modelClass) . '/controllers.js"></script>' . "\n";
         }
         foreach ($cruds AS $modelClass => $table) {
-            echo '<div ng-controller="curate' . Inflector::pluralize($modelClass) . 'Controller" ng-include="\'crud/clerk-fiscal-year/curate.html\'"></div>' . "\n";
+            echo '<div ng-controller="curate' . Inflector::pluralize($modelClass) . 'Controller" ng-include="\'crud/' . Inflector::camel2id($modelClass) . '/curate.html\'"></div>' . "\n";
         }
 
 
