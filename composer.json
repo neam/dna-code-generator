@@ -59,7 +59,6 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
-    "dektrium/yii2-user": "0.9.*",
     "dmstr/yii2-adminlte-asset": "@stable",
     "dmstr/yii2-app-command": "@stable",
     "dmstr/yii2-log": "@stable",
@@ -68,8 +67,7 @@
     "vlucas/phpdotenv": "1.1.*",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-bootstrap": "2.*",
-    "yiisoft/yii2-composer": "*",
-    "yiisoft/yii2-swiftmailer": "2.*"
+    "yiisoft/yii2-composer": "*"
   },
   "require-dev": {
     "yiisoft/yii2-apidoc": "2.*",
