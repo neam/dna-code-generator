@@ -54,6 +54,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:neam/gii2-workflow-ui-generators.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:neam/gii2-file-registry-generators.git"
     }
    ],
   "minimum-stability": "stable",
@@ -80,6 +84,7 @@
     "neam/gii2-dna-project-base-model-generators": "dev-develop@dev",
     "neam/gii2-restful-api-generators": "dev-develop@dev",
     "neam/gii2-workflow-ui-generators": "dev-develop@dev",
+    "neam/gii2-file-registry-generators": "dev-develop@dev",
     "dmstr/yii2-bootstrap": "@dev",
     "yiisoft/yii2-gii": "2.*",
     "schmunk42/yii2-giiant": "dev-master@dev"

@@ -1300,17 +1300,67 @@
             "time": "2015-07-09 05:52:21"
         },
         {
+            "name": "neam/gii2-file-registry-generators",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/neam/gii2-file-registry-generators.git",
+                "reference": "90f99a67ad009c8728d553374a2112c64bfc0373"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/neam/gii2-file-registry-generators/zipball/90f99a67ad009c8728d553374a2112c64bfc0373",
+                "reference": "90f99a67ad009c8728d553374a2112c64bfc0373",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2-gii": "~2.0.1"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "neam\\gii2_file_registry_generators\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "neam\\gii2_file_registry_generators\\": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrik Wollsén",
+                    "email": "fredrik@neam.se",
+                    "homepage": "http://neamlabs.com"
+                }
+            ],
+            "description": "Yii 1 Migration Generation utilizing Gii 2 (Yii 2 Framework)",
+            "homepage": "https://github.com/neam/gii2-file-registry-generators",
+            "keywords": [
+                "file-registry",
+                "gii",
+                "p3media",
+                "yii2"
+            ],
+            "support": {
+                "source": "https://github.com/neam/gii2-file-registry-generators/tree/develop",
+                "issues": "https://github.com/neam/gii2-file-registry-generators/issues"
+            },
+            "time": "2015-08-02 20:19:55"
+        },
+        {
             "name": "neam/gii2-restful-api-generators",
             "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-restful-api-generators.git",
-                "reference": "9b0a318ce6b3279efbb470945791bbbb3e7f74f9"
+                "reference": "72e08f839c396959a945ef133db61799aed390d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/9b0a318ce6b3279efbb470945791bbbb3e7f74f9",
-                "reference": "9b0a318ce6b3279efbb470945791bbbb3e7f74f9",
+                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/72e08f839c396959a945ef133db61799aed390d9",
+                "reference": "72e08f839c396959a945ef133db61799aed390d9",
                 "shasum": ""
             },
             "require": {
@@ -1353,7 +1403,7 @@
                 "source": "https://github.com/neam/gii2-restful-api-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-restful-api-generators/issues"
             },
-            "time": "2015-07-09 05:54:10"
+            "time": "2015-07-31 14:02:11"
         },
         {
             "name": "neam/gii2-workflow-ui-generators",
@@ -1361,12 +1411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-workflow-ui-generators.git",
-                "reference": "9c5d850b7a0ea1a41dd4852c12cba0fde4564bf9"
+                "reference": "7dcea775ae356bd5a02d7ce7d5c96cbbef012846"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/9c5d850b7a0ea1a41dd4852c12cba0fde4564bf9",
-                "reference": "9c5d850b7a0ea1a41dd4852c12cba0fde4564bf9",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/7dcea775ae356bd5a02d7ce7d5c96cbbef012846",
+                "reference": "7dcea775ae356bd5a02d7ce7d5c96cbbef012846",
                 "shasum": ""
             },
             "require": {
@@ -2220,6 +2270,7 @@
         "neam/gii2-dna-project-base-model-generators": 20,
         "neam/gii2-restful-api-generators": 20,
         "neam/gii2-workflow-ui-generators": 20,
+        "neam/gii2-file-registry-generators": 20,
         "dmstr/yii2-bootstrap": 20,
         "schmunk42/yii2-giiant": 20
     },
