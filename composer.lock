@@ -1411,12 +1411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-workflow-ui-generators.git",
-                "reference": "7dcea775ae356bd5a02d7ce7d5c96cbbef012846"
+                "reference": "f1d3f120e6603598f56da7ddfad15505bbb5b783"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/7dcea775ae356bd5a02d7ce7d5c96cbbef012846",
-                "reference": "7dcea775ae356bd5a02d7ce7d5c96cbbef012846",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/f1d3f120e6603598f56da7ddfad15505bbb5b783",
+                "reference": "f1d3f120e6603598f56da7ddfad15505bbb5b783",
                 "shasum": ""
             },
             "require": {
@@ -1458,7 +1458,7 @@
                 "source": "https://github.com/neam/gii2-workflow-ui-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-workflow-ui-generators/issues"
             },
-            "time": "2015-07-09 05:53:24"
+            "time": "2015-08-05 11:23:20"
         },
         {
             "name": "nikic/php-parser",
