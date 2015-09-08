@@ -1,7 +1,5 @@
 <?php
 
-use \Dotenv;
-
 define('DNA_PROJECT_PATH', __DIR__.'/..'.'/..'.'/..');
 $root = DNA_PROJECT_PATH;
 
