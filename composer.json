@@ -41,6 +41,10 @@
     },
     {
       "type": "vcs",
+      "url": "git@github.com:motin/yii2-giiant.git"
+    },
+    {
+      "type": "vcs",
       "url": "git@github.com:neam/gii2-content-model-metadata-generators.git"
     },
     {
@@ -87,7 +91,7 @@
     "neam/gii2-file-registry-generators": "dev-develop@dev",
     "dmstr/yii2-bootstrap": "@dev",
     "yiisoft/yii2-gii": "2.*",
-    "schmunk42/yii2-giiant": "dev-master@dev"
+    "schmunk42/yii2-giiant": "dev-dna-code-generator@dev"
   },
   "scripts": {
     "post-create-project-cmd": [

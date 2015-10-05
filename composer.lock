@@ -1682,16 +1682,16 @@
         },
         {
             "name": "schmunk42/yii2-giiant",
-            "version": "dev-master",
+            "version": "dev-dna-code-generator",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmunk42/yii2-giiant.git",
-                "reference": "fa50e65238a39ad9ce9a99c0f2f59748b6fb38d0"
+                "url": "https://github.com/motin/yii2-giiant.git",
+                "reference": "fde93e9145e9d920ae525e6ce40b3622281b2caf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-giiant/zipball/d2163d79ff5f4b76635121c3597728d8e3b83093",
-                "reference": "fa50e65238a39ad9ce9a99c0f2f59748b6fb38d0",
+                "url": "https://api.github.com/repos/motin/yii2-giiant/zipball/fde93e9145e9d920ae525e6ce40b3622281b2caf",
+                "reference": "fde93e9145e9d920ae525e6ce40b3622281b2caf",
                 "shasum": ""
             },
             "require": {
@@ -1707,7 +1707,6 @@
                     "schmunk42\\giiant\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1725,7 +1724,10 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-03-01 01:09:48"
+            "support": {
+                "source": "https://github.com/motin/yii2-giiant/tree/dna-code-generator"
+            },
+            "time": "2015-10-05 11:38:04"
         },
         {
             "name": "slavcodev/yii2-yii-bridge",
