@@ -14,6 +14,10 @@ $_ENV['SITENAME'] = SITENAME;
 $_ENV['SUPPORT_EMAIL'] = SUPPORT_EMAIL;
 $_ENV['YII_CODE_GENERATION_ADMIN_PASSWORD'] = YII_CODE_GENERATION_ADMIN_PASSWORD;
 
+Dotenv::setEnvironmentVariable('DATABASE_DSN', 'mysql:host=' . DATABASE_HOST . ';port=' . DATABASE_PORT . ';dbname=' . DATABASE_NAME);
+Dotenv::setEnvironmentVariable('DATABASE_USER', DATABASE_USER);
+Dotenv::setEnvironmentVariable('DATABASE_PASSWORD', DATABASE_PASSWORD);
+
 Dotenv::load(__DIR__.'/..');
 
 #Dotenv::required('YII_DEBUG',["","0","1","true",true]);
