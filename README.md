@@ -81,7 +81,7 @@ From here, keep generating migrations, models and/or UI based on the current con
 
 #### Generating `dna/content-model-metadata.json`
 
-    tools/code-generator/yii dna-content-model-metadata-json --configId=1 | jq '.' > dna/content-model-metadata.json
+    curl https://app.codegeneration.io/api/dna-content-model-metadata-json?configId=1 -O- | jq '.' > dna/content-model-metadata.json
 
 #### Generating item types helper class and model traits
 
