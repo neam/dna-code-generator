@@ -29,22 +29,23 @@ All of the below are generated into the project's 12-factor app and deployed sid
 Installation
 -----------
 
-You can install _DNA Code Generator_ using [composer](https://getcomposer.org/download/)...
+## Existing project
+
+Install _DNA Code Generator_ using [composer](https://getcomposer.org/download/):
 
     mkdir -p tools/code-generator
-    composer global require "fxp/composer-asset-plugin:1.0.0-beta4"
+    composer global require "fxp/composer-asset-plugin:~1.0.3"
     composer create-project --stability=dev neam/dna-code-generator tools/code-generator
-
-If you are starting from scratch, you will need to generate the dna project base and config (TODO):
-
-    ./yii dna-project-base --projectPath=@project/dna/config/
-    ./yii dna-project-base-config  --dnaConfigPath=@project/dna/config/
 
 When that is in place, run the code generator setup:
     
     tools/code-generator/yii app/setup
 
 You should then be able to start using the code generator.
+
+## New project
+
+Follow the instructions under https://github.com/neam/dna-project-base#1-set-up-the-dna-driven-project-structure-and-install-dependencies
 
 Usage
 -----
