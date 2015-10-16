@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "3918ab8eb768a71652342b51d0ce4482",
+    "content-hash": "8ed424cae7e0d80782a4e0c2e40f7f07",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -444,7 +445,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-10-05 08:03:34"
+            "time": "2015-10-07 21:31:26"
         },
         {
             "name": "dmstr/yii2-app-command",
@@ -1253,12 +1254,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-dna-project-base-model-generators.git",
-                "reference": "d1a2363635f241fab65cfdabbd2f9b70e68b36d6"
+                "reference": "4562da7a06db92c42a78f904c4030f7d5bed9983"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-dna-project-base-model-generators/zipball/d1a2363635f241fab65cfdabbd2f9b70e68b36d6",
-                "reference": "d1a2363635f241fab65cfdabbd2f9b70e68b36d6",
+                "url": "https://api.github.com/repos/neam/gii2-dna-project-base-model-generators/zipball/4562da7a06db92c42a78f904c4030f7d5bed9983",
+                "reference": "4562da7a06db92c42a78f904c4030f7d5bed9983",
                 "shasum": ""
             },
             "require": {
@@ -1297,7 +1298,7 @@
                 "source": "https://github.com/neam/gii2-dna-project-base-model-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-dna-project-base-model-generators/issues"
             },
-            "time": "2015-10-05 12:07:39"
+            "time": "2015-10-16 13:43:37"
         },
         {
             "name": "neam/gii2-file-registry-generators",
