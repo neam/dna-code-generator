@@ -49,10 +49,12 @@ class DnaAngularWorkflowUiBatchController extends DnaBatchController
         // app-includes...
         foreach ($cruds AS $modelClass => $table) {
             echo "'crud-" . Inflector::camel2id($modelClass) . "-services',\n";
+            echo "'crud-" . Inflector::camel2id($modelClass) . "-routes',\n";
             echo "'crud-" . Inflector::camel2id($modelClass) . "-controllers',\n";
         }
         foreach ($cruds AS $modelClass => $table) {
             echo '<script src="crud/' . Inflector::camel2id($modelClass) . '/services.js"></script>' . "\n";
+            echo '<script src="crud/' . Inflector::camel2id($modelClass) . '/routes.js"></script>' . "\n";
             echo '<script src="crud/' . Inflector::camel2id($modelClass) . '/controllers.js"></script>' . "\n";
         }
         foreach ($cruds AS $modelClass => $table) {
