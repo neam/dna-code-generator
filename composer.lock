@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
-            "version": "v2.3.1",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/almasaeed2010/AdminLTE.git",
-                "reference": "bbb67bafa5e4a10c47098057ed6c82b001e786ea"
+                "reference": "1ee281b3b99e8d8cccdc72fb8437c6888149cb46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/bbb67bafa5e4a10c47098057ed6c82b001e786ea",
-                "reference": "bbb67bafa5e4a10c47098057ed6c82b001e786ea",
+                "url": "https://api.github.com/repos/almasaeed2010/AdminLTE/zipball/1ee281b3b99e8d8cccdc72fb8437c6888149cb46",
+                "reference": "1ee281b3b99e8d8cccdc72fb8437c6888149cb46",
                 "shasum": ""
             },
             "type": "library",
@@ -45,7 +45,7 @@
                 "theme",
                 "web"
             ],
-            "time": "2015-10-22 16:38:34"
+            "time": "2015-10-23 14:50:49"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -619,16 +619,16 @@
         },
         {
             "name": "mikehaertl/php-shellcommand",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikehaertl/php-shellcommand.git",
-                "reference": "ac7d139cd3e6bbdff3254fd2eac7deb30117961d"
+                "reference": "c7bbaf2e01a6d6dbf39d54dd077a8f9061a845c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/ac7d139cd3e6bbdff3254fd2eac7deb30117961d",
-                "reference": "ac7d139cd3e6bbdff3254fd2eac7deb30117961d",
+                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/c7bbaf2e01a6d6dbf39d54dd077a8f9061a845c2",
+                "reference": "c7bbaf2e01a6d6dbf39d54dd077a8f9061a845c2",
                 "shasum": ""
             },
             "type": "library",
@@ -651,7 +651,7 @@
             "keywords": [
                 "shell"
             ],
-            "time": "2015-07-07 08:34:45"
+            "time": "2015-09-22 18:26:51"
         },
         {
             "name": "rmrevin/yii2-fontawesome",
