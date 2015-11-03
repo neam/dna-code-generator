@@ -44,12 +44,16 @@ class DnaContentModelMetadataJsonController extends \yii\console\Controller
         }
 
         // The rest are superimposed on the first content model metadata to create a joint export of the correct format
-        foreach ($configIds as $configId) {
-            $cmm = \ContentModelMetadata::model()->findByPk($configId);
-            if (empty($cmm)) {
-                throw new ErrorException("There is no ContentModelMetadata record with id {$configId}");
+        if (!empty($configIds)) {
+            foreach ($configIds as $configId) {
+                $cmm = \ContentModelMetadata::model()->findByPk($configId);
+                if (empty($cmm)) {
+                    throw new ErrorException("There is no ContentModelMetadata record with id {$configId}");
+                }
+                // Union item types and attributes, which only should be specified in one cmm at once
+                $firstCmm->itemTypes = array_merge($firstCmm->itemTypes, $cmm->itemTypes);
+                $firstCmm->itemTypeAttributes = array_merge($firstCmm->itemTypeAttributes, $cmm->itemTypeAttributes);
             }
-            $firstCmm->itemTypes = array_merge($firstCmm->itemTypes, $cmm->itemTypes);
         }
 
         echo Json::encode($firstCmm->export());
