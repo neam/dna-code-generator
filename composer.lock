@@ -655,16 +655,16 @@
         },
         {
             "name": "rmrevin/yii2-fontawesome",
-            "version": "2.12.1",
+            "version": "2.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rmrevin/yii2-fontawesome.git",
-                "reference": "6bfb628f5d93170bfe896866faac494c24783c2e"
+                "reference": "62308687477734c166753de0ad9e2333dc7dce32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/6bfb628f5d93170bfe896866faac494c24783c2e",
-                "reference": "6bfb628f5d93170bfe896866faac494c24783c2e",
+                "url": "https://api.github.com/repos/rmrevin/yii2-fontawesome/zipball/62308687477734c166753de0ad9e2333dc7dce32",
+                "reference": "62308687477734c166753de0ad9e2333dc7dce32",
                 "shasum": ""
             },
             "require": {
@@ -703,7 +703,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2015-11-09 15:03:05"
+            "time": "2015-11-20 09:17:45"
         },
         {
             "name": "vlucas/phpdotenv",
