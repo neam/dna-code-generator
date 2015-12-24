@@ -48,30 +48,61 @@ class DnaBatchController extends \schmunk42\giiant\commands\BatchController
         $config = $this->getYiiConfiguration();
         $config['id'] = 'temp';
 
+        $exceptions = [];
+
         // create CRUDs
         foreach ($this->tables AS $table) {
-            $name = isset($this->tableNameMap[$table]) ? $this->tableNameMap[$table] : Inflector::camelize($table);
-            $params = [
-                'overwrite' => $this->overwrite,
-                'interactive' => $this->interactive,
-                'template' => 'default',
-                'modelClass' => (!empty($this->modelNamespace) ? $this->modelNamespace . '\\' : '') . $name,
-                'searchModelClass' => $this->searchModelNamespace . '\\search\\' . $name . 'Search',
-                'controllerClass' => (!empty($this->modelNamespace) ? $this->crudControllerNamespace . '\\' : '') . $name . 'Controller',
-                'viewPath' => $this->crudViewPath,
-                'pathPrefix' => $this->crudPathPrefix,
-                'actionButtonClass' => 'yii\\grid\\ActionColumn',
-                'baseControllerClass' => $this->crudBaseControllerClass,
-                'providerList' => implode(',', $this->providers),
-            ];
-            var_dump($params);
-            $route = $this->crudGenerator;;
-            $app = \Yii::$app;
-            $temp = new \yii\console\Application($config);
-            $temp->runAction(ltrim($route, '/'), $params);
-            unset($temp);
-            \Yii::$app = $app;
+
+            // Make sure output buffer is reset
+            if (ob_get_level() > 0) {
+                ob_end_clean();
+            }
+
+            try {
+
+                $name = isset($this->tableNameMap[$table]) ? $this->tableNameMap[$table] : Inflector::camelize($table);
+                $params = [
+                    'overwrite' => $this->overwrite,
+                    'interactive' => $this->interactive,
+                    'template' => 'default',
+                    'modelClass' => (!empty($this->modelNamespace) ? $this->modelNamespace . '\\' : '') . $name,
+                    'searchModelClass' => $this->searchModelNamespace . '\\search\\' . $name . 'Search',
+                    'controllerClass' => (!empty($this->modelNamespace) ? $this->crudControllerNamespace . '\\' : '') . $name . 'Controller',
+                    'viewPath' => $this->crudViewPath,
+                    'pathPrefix' => $this->crudPathPrefix,
+                    'actionButtonClass' => 'yii\\grid\\ActionColumn',
+                    'baseControllerClass' => $this->crudBaseControllerClass,
+                    'providerList' => implode(',', $this->providers),
+                ];
+                echo "\n ===================== Generating CRUD for $table ======================== \n \n";
+                var_dump($params);
+                $route = $this->crudGenerator;
+                $app = \Yii::$app;
+                $temp = new \yii\console\Application($config);
+                $temp->runAction(ltrim($route, '/'), $params);
+                unset($temp);
+                \Yii::$app = $app;
+
+            } catch (\Exception $e) {
+                if (ob_get_level() > 0) {
+                    ob_end_clean();
+                }
+                echo "Exception: " . $e->getMessage() . "\n";
+                //throw $e;
+                $exceptions[] = ["table" => $table, "e" => $e];
+            }
+
         }
+
+        // Print information about exceptions that has occurred
+        if (!empty($exceptions)) {
+            $summary = "";
+            foreach ($exceptions as $exception) {
+                $summary .= "\n--- table {$exception["table"]} ---\n" . $exception["e"]->getMessage() . "\n";
+            }
+            throw new \Exception("Exceptions occurred during generation: \n$summary");
+        }
+
     }
 
 }

@@ -44,9 +44,7 @@ class DnaAngularWorkflowUiBatchController extends DnaBatchController
 
         $this->generateCrud();
 
-         // Generate angularjstmp overview stuffs
-        // states?
-        // app-includes...
+        echo "\n\n ============ AngularJS include statements ============ \n\n";
         foreach ($cruds AS $modelClass => $table) {
             echo "'crud-" . Inflector::camel2id($modelClass) . "-services',\n";
             echo "'crud-" . Inflector::camel2id($modelClass) . "-routes',\n";

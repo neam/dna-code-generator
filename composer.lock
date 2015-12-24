@@ -1202,12 +1202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-content-model-metadata-generators.git",
-                "reference": "7677a348b2c86fbb6a42dbf07efcbea3644baaac"
+                "reference": "a1c5c57e309c7704e79acea32ad6f8cf09e53213"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-content-model-metadata-generators/zipball/7677a348b2c86fbb6a42dbf07efcbea3644baaac",
-                "reference": "7677a348b2c86fbb6a42dbf07efcbea3644baaac",
+                "url": "https://api.github.com/repos/neam/gii2-content-model-metadata-generators/zipball/a1c5c57e309c7704e79acea32ad6f8cf09e53213",
+                "reference": "a1c5c57e309c7704e79acea32ad6f8cf09e53213",
                 "shasum": ""
             },
             "require": {
@@ -1246,7 +1246,7 @@
                 "source": "https://github.com/neam/gii2-content-model-metadata-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-content-model-metadata-generators/issues"
             },
-            "time": "2015-10-22 23:56:54"
+            "time": "2015-12-23 19:26:27"
         },
         {
             "name": "neam/gii2-dna-project-base-model-generators",
@@ -1254,12 +1254,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-dna-project-base-model-generators.git",
-                "reference": "d83f7194dd364fc14786e819be1051ee31809bea"
+                "reference": "91cc52304256cd17159f09aff84ba1e11e393719"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-dna-project-base-model-generators/zipball/d83f7194dd364fc14786e819be1051ee31809bea",
-                "reference": "d83f7194dd364fc14786e819be1051ee31809bea",
+                "url": "https://api.github.com/repos/neam/gii2-dna-project-base-model-generators/zipball/91cc52304256cd17159f09aff84ba1e11e393719",
+                "reference": "91cc52304256cd17159f09aff84ba1e11e393719",
                 "shasum": ""
             },
             "require": {
@@ -1298,7 +1298,7 @@
                 "source": "https://github.com/neam/gii2-dna-project-base-model-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-dna-project-base-model-generators/issues"
             },
-            "time": "2015-11-08 18:14:33"
+            "time": "2015-12-16 13:38:57"
         },
         {
             "name": "neam/gii2-file-registry-generators",
@@ -1356,12 +1356,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-restful-api-generators.git",
-                "reference": "478926c0b0a72694f9e5ffd246f9a283bde62290"
+                "reference": "f0341ecffaa5b0a62b3a77099e11e7ebfcdb6a63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/478926c0b0a72694f9e5ffd246f9a283bde62290",
-                "reference": "478926c0b0a72694f9e5ffd246f9a283bde62290",
+                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/f0341ecffaa5b0a62b3a77099e11e7ebfcdb6a63",
+                "reference": "f0341ecffaa5b0a62b3a77099e11e7ebfcdb6a63",
                 "shasum": ""
             },
             "require": {
@@ -1404,7 +1404,7 @@
                 "source": "https://github.com/neam/gii2-restful-api-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-restful-api-generators/issues"
             },
-            "time": "2015-11-20 19:08:01"
+            "time": "2015-12-24 01:37:29"
         },
         {
             "name": "neam/gii2-workflow-ui-generators",
@@ -1412,12 +1412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-workflow-ui-generators.git",
-                "reference": "4e18460b0c7279478cb1d199c17b9162d337b140"
+                "reference": "e15948d2c9def212095352b78c885ae6317f9aa4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/4e18460b0c7279478cb1d199c17b9162d337b140",
-                "reference": "4e18460b0c7279478cb1d199c17b9162d337b140",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/e15948d2c9def212095352b78c885ae6317f9aa4",
+                "reference": "e15948d2c9def212095352b78c885ae6317f9aa4",
                 "shasum": ""
             },
             "require": {
@@ -1459,7 +1459,7 @@
                 "source": "https://github.com/neam/gii2-workflow-ui-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-workflow-ui-generators/issues"
             },
-            "time": "2015-11-18 11:28:45"
+            "time": "2015-12-24 01:37:55"
         },
         {
             "name": "nikic/php-parser",
