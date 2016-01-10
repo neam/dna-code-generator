@@ -97,8 +97,12 @@ class DnaBatchController extends \schmunk42\giiant\commands\BatchController
         // Print information about exceptions that has occurred
         if (!empty($exceptions)) {
             $summary = "";
-            foreach ($exceptions as $exception) {
-                $summary .= "\n--- table {$exception["table"]} ---\n" . $exception["e"]->getMessage() . "\n";
+            foreach ($exceptions as $exceptionInfo) {
+                /** @var \Exception $exception */
+                $exception = $exceptionInfo["e"];
+                $summary .= "\n------\n{" . get_class($exception) . "} " . $exception->getMessage(
+                    ) . " [" . $exception->getFile() . ", line " . $exception->getLine(
+                    ) . "]\n\nTrace: \n\n" . $exception->getTraceAsString() . "\n\n";
             }
             throw new \Exception("Exceptions occurred during generation: \n$summary");
         }
