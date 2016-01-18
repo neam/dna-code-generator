@@ -1412,12 +1412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-workflow-ui-generators.git",
-                "reference": "951c34f799b383b6e684b819c2637490ed6b66a6"
+                "reference": "3300109534005a99d880944bdf4fb65fba23cd26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/951c34f799b383b6e684b819c2637490ed6b66a6",
-                "reference": "951c34f799b383b6e684b819c2637490ed6b66a6",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/3300109534005a99d880944bdf4fb65fba23cd26",
+                "reference": "3300109534005a99d880944bdf4fb65fba23cd26",
                 "shasum": ""
             },
             "require": {
@@ -1459,7 +1459,7 @@
                 "source": "https://github.com/neam/gii2-workflow-ui-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-workflow-ui-generators/issues"
             },
-            "time": "2016-01-10 11:13:51"
+            "time": "2016-01-18 14:09:25"
         },
         {
             "name": "nikic/php-parser",
@@ -1853,16 +1853,16 @@
         },
         {
             "name": "yiisoft/yii",
-            "version": "1.1.16",
+            "version": "1.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii.git",
-                "reference": "bca0420b6799b0b2a7966aa90bcd15cb4aa73563"
+                "reference": "467ff50a77bf7030a168defc1d47f446136d6228"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii/zipball/bca0420b6799b0b2a7966aa90bcd15cb4aa73563",
-                "reference": "bca0420b6799b0b2a7966aa90bcd15cb4aa73563",
+                "url": "https://api.github.com/repos/yiisoft/yii/zipball/467ff50a77bf7030a168defc1d47f446136d6228",
+                "reference": "467ff50a77bf7030a168defc1d47f446136d6228",
                 "shasum": ""
             },
             "require": {
@@ -1939,7 +1939,7 @@
                 "framework",
                 "yii"
             ],
-            "time": "2014-12-21 19:30:17"
+            "time": "2016-01-13 16:23:58"
         },
         {
             "name": "yiisoft/yii2-apidoc",
