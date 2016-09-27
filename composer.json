@@ -67,29 +67,21 @@
   "minimum-stability": "stable",
   "require": {
     "php": ">=5.4.0",
-    "dmstr/yii2-adminlte-asset": "@stable",
-    "dmstr/yii2-app-command": "@stable",
     "dmstr/yii2-log": "@stable",
-    "dmstr/yii2-migrate-command": "@stable",
     "mikehaertl/php-shellcommand": "1.*",
     "vlucas/phpdotenv": "1.1.*",
-    "yiisoft/yii2": "2.0.*",
-    "yiisoft/yii2-bootstrap": "2.*",
-    "yiisoft/yii2-composer": "*"
+    "yiisoft/yii2": "2.0.*"
   },
   "require-dev": {
     "yiisoft/yii2-apidoc": "2.*",
-    "yiisoft/yii2-codeception": "2.*",
     "yiisoft/yii2-coding-standards": "2.*",
     "yiisoft/yii2-debug": "2.*",
-    "yiisoft/yii2-faker": "2.*",
     "slavcodev/yii2-yii-bridge": "dev-added-console-support@dev",
     "neam/gii2-content-model-metadata-generators": "dev-develop@dev",
     "neam/gii2-dna-project-base-model-generators": "dev-develop@dev",
     "neam/gii2-restful-api-generators": "dev-develop@dev",
     "neam/gii2-workflow-ui-generators": "dev-develop@dev",
     "neam/gii2-file-registry-generators": "dev-develop@dev",
-    "dmstr/yii2-bootstrap": "@dev",
     "yiisoft/yii2-gii": "2.*",
     "schmunk42/yii2-giiant": "dev-dna-code-generator@dev"
   },
