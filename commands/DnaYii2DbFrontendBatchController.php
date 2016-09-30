@@ -41,7 +41,10 @@ class DnaYii2DbFrontendBatchController extends DnaBatchController
         }
 
         $crudModels = \ItemTypes::where('generate_phundament_crud');
-        $qaStateModels = \DataModel::qaStateModels();
+        $qaStateModels = array();
+        foreach (\ItemTypes::where('is_preparable') as $model => $table) {
+            $qaStateModels[$model . "QaState"] = $table . "_qa_state";
+        }
 
         // merge
         $cruds = array_merge($crudModels, $qaStateModels);

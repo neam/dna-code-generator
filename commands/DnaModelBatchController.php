@@ -17,7 +17,10 @@ class DnaModelBatchController extends DnaBatchController
 
         $crudModels = \ItemTypes::where('generate_phundament_crud');
         $qaModels = \ItemTypes::where('is_preparable');
-        $qaStateModels = \DataModel::qaStateModels();
+        $qaStateModels = array();
+        foreach (\ItemTypes::where('is_preparable') as $model => $table) {
+            $qaStateModels[$model . "QaState"] = $table . "_qa_state";
+        }
 
         // merge
         $models = array_merge($crudModels, $qaModels, $qaStateModels);
