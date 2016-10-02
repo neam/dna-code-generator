@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "133fe785f6ebeec4b6b7ae903d6aca1a",
     "content-hash": "a8e498bdf8a5c7aa3e3530ad0aa264d9",
     "packages": [
         {
@@ -777,12 +778,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-content-model-metadata-generators.git",
-                "reference": "a1c5c57e309c7704e79acea32ad6f8cf09e53213"
+                "reference": "7b49b97926c263d9a130feac4edc95b24e16010a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-content-model-metadata-generators/zipball/a1c5c57e309c7704e79acea32ad6f8cf09e53213",
-                "reference": "a1c5c57e309c7704e79acea32ad6f8cf09e53213",
+                "url": "https://api.github.com/repos/neam/gii2-content-model-metadata-generators/zipball/7b49b97926c263d9a130feac4edc95b24e16010a",
+                "reference": "7b49b97926c263d9a130feac4edc95b24e16010a",
                 "shasum": ""
             },
             "require": {
@@ -821,7 +822,7 @@
                 "source": "https://github.com/neam/gii2-content-model-metadata-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-content-model-metadata-generators/issues"
             },
-            "time": "2015-12-23 19:26:27"
+            "time": "2016-10-02 19:59:17"
         },
         {
             "name": "neam/gii2-dna-project-base-model-generators",
@@ -931,12 +932,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-restful-api-generators.git",
-                "reference": "69013f363365bb5bd11691f1a0009025167649ca"
+                "reference": "f599f9c40ec0a366d090af8976eab20e354a984d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/69013f363365bb5bd11691f1a0009025167649ca",
-                "reference": "69013f363365bb5bd11691f1a0009025167649ca",
+                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/f599f9c40ec0a366d090af8976eab20e354a984d",
+                "reference": "f599f9c40ec0a366d090af8976eab20e354a984d",
                 "shasum": ""
             },
             "require": {
@@ -979,7 +980,7 @@
                 "source": "https://github.com/neam/gii2-restful-api-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-restful-api-generators/issues"
             },
-            "time": "2016-09-08 07:51:07"
+            "time": "2016-10-02 20:00:21"
         },
         {
             "name": "neam/gii2-workflow-ui-generators",
@@ -987,12 +988,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-workflow-ui-generators.git",
-                "reference": "e41497ff3ea24f59fea58dc69b53535336fe76d1"
+                "reference": "1a2b1766fa77c31855be15f163f8b8d69f64c2eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/e41497ff3ea24f59fea58dc69b53535336fe76d1",
-                "reference": "e41497ff3ea24f59fea58dc69b53535336fe76d1",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/1a2b1766fa77c31855be15f163f8b8d69f64c2eb",
+                "reference": "1a2b1766fa77c31855be15f163f8b8d69f64c2eb",
                 "shasum": ""
             },
             "require": {
@@ -1034,7 +1035,7 @@
                 "source": "https://github.com/neam/gii2-workflow-ui-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-workflow-ui-generators/issues"
             },
-            "time": "2016-09-08 07:51:35"
+            "time": "2016-09-30 21:09:26"
         },
         {
             "name": "nikic/php-parser",
