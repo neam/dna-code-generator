@@ -376,16 +376,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133"
+                "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/2b75151ea60e1fd820046416eee2e89c3dda1133",
-                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/5bfcb7a6dfa9771e2248eb8c4448613330f343ff",
+                "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff",
                 "shasum": ""
             },
             "require": {
@@ -466,7 +466,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-07-11 13:36:42"
+            "time": "2016-10-20 12:02:50"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -932,12 +932,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-restful-api-generators.git",
-                "reference": "f599f9c40ec0a366d090af8976eab20e354a984d"
+                "reference": "bcf8b141d66edc595b41558703599b365541b4a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/f599f9c40ec0a366d090af8976eab20e354a984d",
-                "reference": "f599f9c40ec0a366d090af8976eab20e354a984d",
+                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/bcf8b141d66edc595b41558703599b365541b4a1",
+                "reference": "bcf8b141d66edc595b41558703599b365541b4a1",
                 "shasum": ""
             },
             "require": {
@@ -980,7 +980,7 @@
                 "source": "https://github.com/neam/gii2-restful-api-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-restful-api-generators/issues"
             },
-            "time": "2016-10-02 20:00:21"
+            "time": "2016-10-20 09:41:18"
         },
         {
             "name": "neam/gii2-workflow-ui-generators",
@@ -988,12 +988,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-workflow-ui-generators.git",
-                "reference": "1a2b1766fa77c31855be15f163f8b8d69f64c2eb"
+                "reference": "00598117c77bc89c8602bd31fc72b9f5575ba687"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/1a2b1766fa77c31855be15f163f8b8d69f64c2eb",
-                "reference": "1a2b1766fa77c31855be15f163f8b8d69f64c2eb",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/00598117c77bc89c8602bd31fc72b9f5575ba687",
+                "reference": "00598117c77bc89c8602bd31fc72b9f5575ba687",
                 "shasum": ""
             },
             "require": {
@@ -1035,7 +1035,7 @@
                 "source": "https://github.com/neam/gii2-workflow-ui-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-workflow-ui-generators/issues"
             },
-            "time": "2016-09-30 21:09:26"
+            "time": "2016-10-23 07:20:10"
         },
         {
             "name": "nikic/php-parser",
@@ -1225,16 +1225,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "5277094ed527a1c4477177d102fe4c53551953e0"
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/5277094ed527a1c4477177d102fe4c53551953e0",
-                "reference": "5277094ed527a1c4477177d102fe4c53551953e0",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
                 "shasum": ""
             },
             "require": {
@@ -1268,7 +1268,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-09-19 16:02:08"
+            "time": "2016-10-10 12:19:37"
         },
         {
             "name": "schmunk42/yii2-giiant",
