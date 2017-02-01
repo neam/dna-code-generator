@@ -44,22 +44,25 @@ class DnaAngularWorkflowUiBatchController extends DnaBatchController
 
         $this->generateCrud();
 
-        echo "\n\n ============ AngularJS include statements ============ \n\n";
+        echo "\n\n ============ AngularJS include statements / markup ============ \n\n";
         foreach ($cruds AS $modelClass => $table) {
-            echo "'crud-" . Inflector::camel2id($modelClass) . "-services',\n";
-            echo "'crud-" . Inflector::camel2id($modelClass) . "-routes',\n";
-            echo "'crud-" . Inflector::camel2id($modelClass) . "-controllers',\n";
+            $modelClassSingularId = Inflector::camel2id($modelClass);
+            echo <<<EOJS
+                load$modelClass: (\$q, \$ocLazyLoad) => {
+                    return \$q((resolve) => {
+                        require.ensure([], () => {
+                            let module = require('crud/$modelClassSingularId/components.js');
+                            \$ocLazyLoad.load({name: module.default.name});
+                            resolve(module);
+                        })
+                    });
+                },
+EOJS;
         }
         foreach ($cruds AS $modelClass => $table) {
-            echo '<script src="crud/' . Inflector::camel2id($modelClass) . '/services.js"></script>' . "\n";
-            echo '<script src="crud/' . Inflector::camel2id($modelClass) . '/routes.js"></script>' . "\n";
-            echo '<script src="crud/' . Inflector::camel2id($modelClass) . '/controllers.js"></script>' . "\n";
+            $tag = 'crud-' . Inflector::camel2id($modelClass) . '-curate';
+            echo "<$tag></$tag>" . "\n";
         }
-        foreach ($cruds AS $modelClass => $table) {
-            echo '<div ng-controller="list' . Inflector::pluralize($modelClass) . 'Controller" ng-include="\'crud/' . Inflector::camel2id($modelClass) . '/curate.html\'"></div>' . "\n";
-        }
-
-
 
     }
 
