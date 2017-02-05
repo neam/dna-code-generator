@@ -48,7 +48,7 @@ class DnaAngularWorkflowUiBatchController extends DnaBatchController
         foreach ($cruds AS $modelClass => $table) {
             $modelClassSingularId = Inflector::camel2id($modelClass);
             echo <<<EOJS
-                load$modelClass: (\$q, \$ocLazyLoad) => {
+                load{$modelClass}Crud: (\$q, \$ocLazyLoad) => {
                     return \$q((resolve) => {
                         require.ensure([], () => {
                             let module = require('crud/$modelClassSingularId/components.js');
@@ -57,6 +57,7 @@ class DnaAngularWorkflowUiBatchController extends DnaBatchController
                         })
                     });
                 },
+
 EOJS;
         }
         foreach ($cruds AS $modelClass => $table) {
