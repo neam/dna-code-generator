@@ -54,7 +54,7 @@ class DnaAngularWorkflowUiBatchController extends DnaBatchController
                             let module = require('crud/$modelClassSingularId/components.js');
                             \$ocLazyLoad.load({name: module.default.name});
                             resolve(module);
-                        })
+                        }, "crud-$modelClassSingularId")
                     });
                 },
 
