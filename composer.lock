@@ -1489,20 +1489,25 @@
         },
         {
             "name": "yiisoft/yii",
-            "version": "1.1.17",
+            "version": "1.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii.git",
-                "reference": "467ff50a77bf7030a168defc1d47f446136d6228"
+                "reference": "018a89e67c0f1e13b11630a26a953f1cb0678291"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii/zipball/467ff50a77bf7030a168defc1d47f446136d6228",
-                "reference": "467ff50a77bf7030a168defc1d47f446136d6228",
+                "url": "https://api.github.com/repos/yiisoft/yii/zipball/018a89e67c0f1e13b11630a26a953f1cb0678291",
+                "reference": "018a89e67c0f1e13b11630a26a953f1cb0678291",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.1.0"
+            },
+            "require-dev": {
+                "phing/phing": "2.*",
+                "phpunit/phpunit": "~3.7",
+                "phpunit/phpunit-selenium": "~1.4.0"
             },
             "bin": [
                 "framework/yiic"
@@ -1575,7 +1580,7 @@
                 "framework",
                 "yii"
             ],
-            "time": "2016-01-13 16:23:58"
+            "time": "2017-04-19 11:51:43"
         },
         {
             "name": "yiisoft/yii2-apidoc",
