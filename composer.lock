@@ -944,12 +944,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-restful-api-generators.git",
-                "reference": "bcf8b141d66edc595b41558703599b365541b4a1"
+                "reference": "4a44896244307388179f1593600f4d57a4daafff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/bcf8b141d66edc595b41558703599b365541b4a1",
-                "reference": "bcf8b141d66edc595b41558703599b365541b4a1",
+                "url": "https://api.github.com/repos/neam/gii2-restful-api-generators/zipball/4a44896244307388179f1593600f4d57a4daafff",
+                "reference": "4a44896244307388179f1593600f4d57a4daafff",
                 "shasum": ""
             },
             "require": {
@@ -992,7 +992,7 @@
                 "source": "https://github.com/neam/gii2-restful-api-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-restful-api-generators/issues"
             },
-            "time": "2016-10-20 09:41:18"
+            "time": "2017-06-11 11:09:14"
         },
         {
             "name": "neam/gii2-workflow-ui-generators",
@@ -1000,12 +1000,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-workflow-ui-generators.git",
-                "reference": "28df7e620a6e5c25b9acbde1122defa85b56c6f7"
+                "reference": "9f729119f1fd019ac8a2bbfd969ca2c7abb2bd10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/28df7e620a6e5c25b9acbde1122defa85b56c6f7",
-                "reference": "28df7e620a6e5c25b9acbde1122defa85b56c6f7",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/9f729119f1fd019ac8a2bbfd969ca2c7abb2bd10",
+                "reference": "9f729119f1fd019ac8a2bbfd969ca2c7abb2bd10",
                 "shasum": ""
             },
             "require": {
@@ -1047,7 +1047,7 @@
                 "source": "https://github.com/neam/gii2-workflow-ui-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-workflow-ui-generators/issues"
             },
-            "time": "2017-03-31 14:02:17"
+            "time": "2017-06-11 11:07:23"
         },
         {
             "name": "nikic/php-parser",
