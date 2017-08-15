@@ -34,7 +34,9 @@ $config = array(
     ),
 );
 
-require($projectRoot . '/dna/dna-api-revisions/' . YII_DNA_REVISION . '/include.php');
+// Import the DNA classes and configuration into $config
+require($projectRoot . '/dna/config/DnaConfig.php');
+DnaConfig::applyConfig($config);
 
 // Unset unused configs that come from the dna config.
 unset($config['theme']);
