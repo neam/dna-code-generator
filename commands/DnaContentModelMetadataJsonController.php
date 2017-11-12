@@ -27,7 +27,7 @@ class DnaContentModelMetadataJsonController extends \yii\console\Controller
 
     public function actionIndex()
     {
-        require(DNA_PROJECT_PATH . "/dna/models/ContentModelMetadata.php");
+        require(DNA_PROJECT_PATH . "/dna/legacy-yii-models/ContentModelMetadata.php");
 
         // Allow comma-separated list of config ids to include in export
         if (strpos($this->configId, ",") !== false) {

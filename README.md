@@ -101,10 +101,10 @@ Updating the pristine generated model traits:
 
 Move generated model traits to dna:
 
-    mkdir -p dna/models/metadata/traits/
-    mv tools/code-generator/models/metadata/traits/*Trait.php dna/models/metadata/traits/
+    mkdir -p dna/legacy-yii-models/metadata/traits/
+    mv tools/code-generator/models/metadata/traits/*Trait.php dna/legacy-yii-models/metadata/traits/
 
-Before committing, make sure to autoformat all code in dna/models directory.
+Before committing, make sure to autoformat all code in dna/legacy-yii-models directory.
 
 #### Generating models
 
@@ -114,10 +114,10 @@ Requires an up to date generated item types helper class.
 
 Updating the pristine generated models and copying base and metadata models to dna:
 
-    mkdir -p dna/models/base/
-    mkdir -p dna/models/metadata/
+    mkdir -p dna/legacy-yii-models/base/
+    mkdir -p dna/legacy-yii-models/metadata/
     tools/code-generator/yii dna-model-batch
-    tools/code-generator/vendor/neam/gii2-dna-project-base-model-generators/yii1_model/copy-models.sh dna/models
+    tools/code-generator/vendor/neam/gii2-dna-project-base-model-generators/yii1_model/copy-models.sh dna/legacy-yii-models
 
 #### Generating RESTful API
 

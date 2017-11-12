@@ -31,9 +31,25 @@ class DnaRestApiBatchController extends DnaBatchController
 
         $cruds = \ItemTypes::where('generate_yii_rest_api_crud');
 
+        foreach ($cruds AS $modelClass => $table) {
+            $modelPath = DNA_PROJECT_PATH . "/dna/legacy-yii-models/base/Base$modelClass.php";
+            if (!is_readable($modelPath)) {
+                echo "No base class exists at $modelPath\n";
+                continue;
+            }
+            require($modelPath);
+        }
+        foreach ($cruds AS $modelClass => $table) {
+            $modelPath = DNA_PROJECT_PATH . "/dna/legacy-yii-models/metadata/Metadata$modelClass.php";
+            if (!is_readable($modelPath)) {
+                echo "No metadata class exists at $modelPath\n";
+                continue;
+            }
+            require($modelPath);
+        }
         $this->modelItemTypes = [];
         foreach ($cruds AS $modelClass => $table) {
-            $modelPath = DNA_PROJECT_PATH . "/dna/models/$modelClass.php";
+            $modelPath = DNA_PROJECT_PATH . "/dna/legacy-yii-models/$modelClass.php";
             if (!is_readable($modelPath)) {
                 echo "No model exists at $modelPath\n";
                 continue;

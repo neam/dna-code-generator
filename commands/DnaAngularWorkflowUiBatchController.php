@@ -30,7 +30,7 @@ class DnaAngularWorkflowUiBatchController extends DnaBatchController
         $cruds = \ItemTypes::where('generate_angular_crud_module');
 
         foreach ($cruds AS $modelClass => $table) {
-            $modelPath = DNA_PROJECT_PATH . "/dna/models/$modelClass.php";
+            $modelPath = DNA_PROJECT_PATH . "/dna/legacy-yii-models/$modelClass.php";
             if (!is_readable($modelPath)) {
                 echo "No model exists at $modelPath\n";
                 continue;
