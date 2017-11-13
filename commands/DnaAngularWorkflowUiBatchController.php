@@ -30,6 +30,22 @@ class DnaAngularWorkflowUiBatchController extends DnaBatchController
         $cruds = \ItemTypes::where('generate_angular_crud_module');
 
         foreach ($cruds AS $modelClass => $table) {
+            $modelPath = DNA_PROJECT_PATH . "/dna/legacy-yii-models/base/Base$modelClass.php";
+            if (!is_readable($modelPath)) {
+                echo "No base class exists at $modelPath\n";
+                continue;
+            }
+            require($modelPath);
+        }
+        foreach ($cruds AS $modelClass => $table) {
+            $modelPath = DNA_PROJECT_PATH . "/dna/legacy-yii-models/metadata/Metadata$modelClass.php";
+            if (!is_readable($modelPath)) {
+                echo "No metadata class exists at $modelPath\n";
+                continue;
+            }
+            require($modelPath);
+        }
+        foreach ($cruds AS $modelClass => $table) {
             $modelPath = DNA_PROJECT_PATH . "/dna/legacy-yii-models/$modelClass.php";
             if (!is_readable($modelPath)) {
                 echo "No model exists at $modelPath\n";
