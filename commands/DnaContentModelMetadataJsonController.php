@@ -59,6 +59,7 @@ class DnaContentModelMetadataJsonController extends \yii\console\Controller
         echo "* {$duration}s - Fetching related items for {$firstCmm->getItemLabel()} \n";
         $merged->itemTypes = $firstCmm->itemTypes;
         $merged->itemTypeAttributes = $firstCmm->itemTypeAttributes;
+        $duration = round(microtime(true) - $start, 1);
         echo "* {$duration}s - Starting with {$firstCmm->getItemLabel()} \n";
 
         // The rest are superimposed on the first content model metadata to create a joint export of the correct format
@@ -74,6 +75,7 @@ class DnaContentModelMetadataJsonController extends \yii\console\Controller
                 echo "* {$duration}s - Fetching related items for {$cmm->getItemLabel()} \n";
                 $itemTypes = $cmm->itemTypes;
                 $itemTypeAttributes = $cmm->itemTypeAttributes;
+                $duration = round(microtime(true) - $start, 1);
                 echo "* {$duration}s - Merging in {$cmm->getItemLabel()} \n";
                 // Union item types and attributes, which only should be specified in one cmm at once
                 $fasterArrayMerge($merged->itemTypes, $itemTypes);
@@ -86,10 +88,12 @@ class DnaContentModelMetadataJsonController extends \yii\console\Controller
 
         $export = \ContentModelMetadata::exportStatic($merged->itemTypes, $merged->itemTypeAttributes);
 
+        $duration = round(microtime(true) - $start, 1);
         echo "* {$duration}s - Encoding JSON...\n";
         $json = Json::encode($export);
         file_put_contents('/app/out.json', $json);
 
+        $duration = round(microtime(true) - $start, 1);
         echo "* {$duration}s - Done. Contents (len " . strlen($json) . ") saved in out.json\n";
     }
 
