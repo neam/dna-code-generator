@@ -38,68 +38,16 @@ class DnaContentModelMetadataJsonController extends \yii\console\Controller
             $configIds = [$this->configId];
         }
 
+        $fasterArrayMerge = function (&$array1, $array2) {
+            foreach ($array2 as $i) {
+                $array1[] = $i;
+            }
+        };
+
         $merged = (object) [
             'itemTypes' => [],
             'itemTypeAttributes' => [],
         ];
-
-        $duration = round(microtime(true) - $start, 1);
-        echo "* {$duration}s - Fetching itemTypes for all content models \n";
-        $itemTypes = \ItemType::model()
-            /*
-            ->with(
-                [
-                    'itemTypeAttributes' => array(
-                        // we don't want to include these
-                        'select' => false,
-                    ),
-                    'changesets' => array(
-                        // we don't want to include these
-                        'select' => false,
-                    ),
-                    'contentModelMetadata',
-                    'itemTypeCategory',
-                ]
-            )
-            */
-            ->findAllByAttributes(
-                [
-                    'content_model_metadata_id' => $configIds
-                ]
-            );
-        $duration = round(microtime(true) - $start, 1);
-        echo "* {$duration}s - Fetching itemTypeAttributes for all content models \n";
-        $itemTypeAttributes = \ItemTypeAttribute::model()
-            /*
-            ->with(
-                [
-                    'attributeType',
-                ]
-            )
-            */
-            ->findAllByAttributes(
-                [
-                    'content_model_metadata_id' => $configIds
-                ]
-            );
-
-        $itemTypesByContentModelMetadataId = [];
-        foreach ($configIds as $configId) {
-            $itemTypesByContentModelMetadataId[$configId] = [];
-        }
-        foreach ($itemTypes as $itemType) {
-            $itemTypesByContentModelMetadataId[$itemType->content_model_metadata_id][] = $itemType;
-        }
-        $itemTypeAttributesByContentModelMetadataId = [];
-        foreach ($configIds as $configId) {
-            $itemTypeAttributesByContentModelMetadataId[$configId] = [];
-        }
-        foreach ($itemTypeAttributes as $itemTypeAttribute) {
-            $itemTypeAttributesByContentModelMetadataId[$itemTypeAttribute->content_model_metadata_id][] = $itemTypeAttribute;
-        }
-
-        $duration = round(microtime(true) - $start, 1);
-        echo "* {$duration}s - Fetched related items for all content models \n";
 
         // First content model metadata exports as usual
         $configId = array_shift($configIds);
@@ -108,9 +56,10 @@ class DnaContentModelMetadataJsonController extends \yii\console\Controller
             throw new ErrorException("There is no ContentModelMetadata record with id {$configId}");
         }
         $duration = round(microtime(true) - $start, 1);
+        echo "* {$duration}s - Fetching related items for {$firstCmm->getItemLabel()} \n";
+        $merged->itemTypes = $firstCmm->itemTypes;
+        $merged->itemTypeAttributes = $firstCmm->itemTypeAttributes;
         echo "* {$duration}s - Starting with {$firstCmm->getItemLabel()} \n";
-        $merged->itemTypes = $itemTypesByContentModelMetadataId[$configId];
-        $merged->itemTypeAttributes = $itemTypeAttributesByContentModelMetadataId[$configId];
 
         // The rest are superimposed on the first content model metadata to create a joint export of the correct format
         if (!empty($configIds)) {
@@ -122,10 +71,13 @@ class DnaContentModelMetadataJsonController extends \yii\console\Controller
                     throw new ErrorException("There is no ContentModelMetadata record with id {$configId}");
                 }
                 $duration = round(microtime(true) - $start, 1);
+                echo "* {$duration}s - Fetching related items for {$cmm->getItemLabel()} \n";
+                $itemTypes = $cmm->itemTypes;
+                $itemTypeAttributes = $cmm->itemTypeAttributes;
                 echo "* {$duration}s - Merging in {$cmm->getItemLabel()} \n";
                 // Union item types and attributes, which only should be specified in one cmm at once
-                $merged->itemTypes += $itemTypesByContentModelMetadataId[$configId];
-                $merged->itemTypeAttributes += $itemTypeAttributesByContentModelMetadataId[$configId];
+                $fasterArrayMerge($merged->itemTypes, $itemTypes);
+                $fasterArrayMerge($merged->itemTypeAttributes, $itemTypeAttributes);
             }
         }
 
