@@ -706,16 +706,16 @@
         },
         {
             "name": "dmstr/yii2-bootstrap",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-bootstrap.git",
-                "reference": "df2afef6509390e6d754c16b72f3c5a980169e19"
+                "reference": "07b42ef940ff50e011e5b250ac6cabbdae7dd431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-bootstrap/zipball/df2afef6509390e6d754c16b72f3c5a980169e19",
-                "reference": "df2afef6509390e6d754c16b72f3c5a980169e19",
+                "url": "https://api.github.com/repos/dmstr/yii2-bootstrap/zipball/07b42ef940ff50e011e5b250ac6cabbdae7dd431",
+                "reference": "07b42ef940ff50e011e5b250ac6cabbdae7dd431",
                 "shasum": ""
             },
             "require": {
@@ -743,7 +743,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-04-22 18:33:17"
+            "time": "2018-01-03 11:05:52"
         },
         {
             "name": "mikevanriel/text-to-latex",
@@ -790,12 +790,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-content-model-metadata-generators.git",
-                "reference": "7b49b97926c263d9a130feac4edc95b24e16010a"
+                "reference": "4290e18ca51e5f99edace24b075aa74d8a71a23c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-content-model-metadata-generators/zipball/7b49b97926c263d9a130feac4edc95b24e16010a",
-                "reference": "7b49b97926c263d9a130feac4edc95b24e16010a",
+                "url": "https://api.github.com/repos/neam/gii2-content-model-metadata-generators/zipball/4290e18ca51e5f99edace24b075aa74d8a71a23c",
+                "reference": "4290e18ca51e5f99edace24b075aa74d8a71a23c",
                 "shasum": ""
             },
             "require": {
@@ -834,7 +834,7 @@
                 "source": "https://github.com/neam/gii2-content-model-metadata-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-content-model-metadata-generators/issues"
             },
-            "time": "2016-10-02 19:59:17"
+            "time": "2018-01-07 14:30:13"
         },
         {
             "name": "neam/gii2-dna-project-base-model-generators",
@@ -1000,12 +1000,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/neam/gii2-workflow-ui-generators.git",
-                "reference": "1087b360ff297d2d6cce23ae067b82e2466ab9fc"
+                "reference": "229e9daa102f08570e53a978f496980139bfaf1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/1087b360ff297d2d6cce23ae067b82e2466ab9fc",
-                "reference": "1087b360ff297d2d6cce23ae067b82e2466ab9fc",
+                "url": "https://api.github.com/repos/neam/gii2-workflow-ui-generators/zipball/229e9daa102f08570e53a978f496980139bfaf1b",
+                "reference": "229e9daa102f08570e53a978f496980139bfaf1b",
                 "shasum": ""
             },
             "require": {
@@ -1047,7 +1047,7 @@
                 "source": "https://github.com/neam/gii2-workflow-ui-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-workflow-ui-generators/issues"
             },
-            "time": "2017-06-28 05:56:56"
+            "time": "2018-01-07 14:30:41"
         },
         {
             "name": "nikic/php-parser",
