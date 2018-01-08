@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "133fe785f6ebeec4b6b7ae903d6aca1a",
     "content-hash": "a8e498bdf8a5c7aa3e3530ad0aa264d9",
     "packages": [
         {
@@ -204,7 +203,7 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2015-03-06 05:21:16"
+            "time": "2015-03-06T05:21:16+00:00"
         },
         {
             "name": "dmstr/yii2-log",
@@ -246,7 +245,7 @@
                 "target",
                 "yii2"
             ],
-            "time": "2015-01-09 16:17:53"
+            "time": "2015-01-09T16:17:53+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -293,7 +292,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2017-06-03 02:28:16"
+            "time": "2017-06-03T02:28:16+00:00"
         },
         {
             "name": "mikehaertl/php-shellcommand",
@@ -329,7 +328,7 @@
             "keywords": [
                 "shell"
             ],
-            "time": "2017-12-01 09:01:05"
+            "time": "2017-12-01T09:01:05+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -375,7 +374,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2015-05-30 15:59:26"
+            "time": "2015-05-30T15:59:26+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -475,7 +474,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-06-05 14:33:41"
+            "time": "2017-06-05T14:33:41+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -525,7 +524,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2016-12-20 13:26:02"
+            "time": "2016-12-20T13:26:02+00:00"
         }
     ],
     "packages-dev": [
@@ -642,7 +641,7 @@
                 }
             ],
             "description": "A client side search engine for use on static pages.",
-            "time": "2016-11-22 12:11:39"
+            "time": "2016-11-22T12:11:39+00:00"
         },
         {
             "name": "cebe/markdown-latex",
@@ -702,7 +701,7 @@
                 "markdown",
                 "markdown-extra"
             ],
-            "time": "2017-05-19 11:16:33"
+            "time": "2017-05-19T11:16:33+00:00"
         },
         {
             "name": "dmstr/yii2-bootstrap",
@@ -743,7 +742,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2018-01-03 11:05:52"
+            "time": "2018-01-03T11:05:52+00:00"
         },
         {
             "name": "mikevanriel/text-to-latex",
@@ -782,7 +781,7 @@
                 }
             ],
             "description": "A converter class that converts normal ASCII text to valid LaTeX",
-            "time": "2015-12-13 07:33:35"
+            "time": "2015-12-13T07:33:35+00:00"
         },
         {
             "name": "neam/gii2-content-model-metadata-generators",
@@ -834,7 +833,7 @@
                 "source": "https://github.com/neam/gii2-content-model-metadata-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-content-model-metadata-generators/issues"
             },
-            "time": "2018-01-07 14:30:13"
+            "time": "2018-01-07T14:30:13+00:00"
         },
         {
             "name": "neam/gii2-dna-project-base-model-generators",
@@ -886,7 +885,7 @@
                 "source": "https://github.com/neam/gii2-dna-project-base-model-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-dna-project-base-model-generators/issues"
             },
-            "time": "2016-02-01 12:58:33"
+            "time": "2016-02-01T12:58:33+00:00"
         },
         {
             "name": "neam/gii2-file-registry-generators",
@@ -936,7 +935,7 @@
                 "source": "https://github.com/neam/gii2-file-registry-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-file-registry-generators/issues"
             },
-            "time": "2015-08-02 20:19:55"
+            "time": "2015-08-02T20:19:55+00:00"
         },
         {
             "name": "neam/gii2-restful-api-generators",
@@ -992,7 +991,7 @@
                 "source": "https://github.com/neam/gii2-restful-api-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-restful-api-generators/issues"
             },
-            "time": "2017-06-11 11:09:14"
+            "time": "2017-06-11T11:09:14+00:00"
         },
         {
             "name": "neam/gii2-workflow-ui-generators",
@@ -1047,7 +1046,7 @@
                 "source": "https://github.com/neam/gii2-workflow-ui-generators/tree/develop",
                 "issues": "https://github.com/neam/gii2-workflow-ui-generators/issues"
             },
-            "time": "2018-01-07 14:30:41"
+            "time": "2018-01-07T14:30:41+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -1092,7 +1091,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2015-09-19 14:15:08"
+            "time": "2015-09-19T14:15:08+00:00"
         },
         {
             "name": "phpdocumentor/reflection",
@@ -1146,7 +1145,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2016-05-21 08:42:32"
+            "time": "2016-05-21T08:42:32+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -1195,7 +1194,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2016-01-25 08:17:30"
+            "time": "2016-01-25T08:17:30+00:00"
         },
         {
             "name": "phpspec/php-diff",
@@ -1233,7 +1232,7 @@
                 }
             ],
             "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
-            "time": "2016-04-07 12:29:16"
+            "time": "2016-04-07T12:29:16+00:00"
         },
         {
             "name": "psr/log",
@@ -1280,7 +1279,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "schmunk42/yii2-giiant",
@@ -1329,7 +1328,7 @@
             "support": {
                 "source": "https://github.com/motin/yii2-giiant/tree/dna-code-generator"
             },
-            "time": "2015-10-05 11:38:04"
+            "time": "2015-10-05T11:38:04+00:00"
         },
         {
             "name": "scrivo/highlight.php",
@@ -1363,7 +1362,7 @@
                 "highlight.php",
                 "syntax"
             ],
-            "time": "2015-12-31 20:33:22"
+            "time": "2015-12-31T20:33:22+00:00"
         },
         {
             "name": "slavcodev/yii2-yii-bridge",
@@ -1407,7 +1406,7 @@
                 "issues": "https://github.com/slavcodev/yii2-yii-bridge/issues",
                 "source": "https://github.com/slavcodev/yii2-yii-bridge"
             },
-            "time": "2015-02-04 01:51:26"
+            "time": "2015-02-04T01:51:26+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -1485,7 +1484,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-05-22 02:43:20"
+            "time": "2017-05-22T02:43:20+00:00"
         },
         {
             "name": "yiisoft/yii",
@@ -1580,7 +1579,7 @@
                 "framework",
                 "yii"
             ],
-            "time": "2017-06-08 07:19:07"
+            "time": "2017-06-08T07:19:07+00:00"
         },
         {
             "name": "yiisoft/yii2-apidoc",
@@ -1644,7 +1643,7 @@
                 "phpdoc",
                 "yii2"
             ],
-            "time": "2016-11-22 15:29:55"
+            "time": "2016-11-22T15:29:55+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -1690,7 +1689,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2017-10-09 19:48:22"
+            "time": "2017-10-09T19:48:22+00:00"
         },
         {
             "name": "yiisoft/yii2-coding-standards",
@@ -1758,7 +1757,7 @@
                 "framework",
                 "yii"
             ],
-            "time": "2017-05-12 10:30:45"
+            "time": "2017-05-12T10:30:45+00:00"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -1805,7 +1804,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2017-10-09 20:30:01"
+            "time": "2017-10-09T20:30:01+00:00"
         },
         {
             "name": "yiisoft/yii2-gii",
@@ -1858,7 +1857,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2016-03-18 14:09:46"
+            "time": "2016-03-18T14:09:46+00:00"
         }
     ],
     "aliases": [],
