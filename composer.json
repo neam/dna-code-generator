@@ -66,11 +66,12 @@
    ],
   "minimum-stability": "stable",
   "require": {
-    "php": ">=5.4.0",
+    "php": ">=7.2.0",
     "dmstr/yii2-log": "@stable",
     "mikehaertl/php-shellcommand": "1.*",
     "vlucas/phpdotenv": "1.1.*",
-    "yiisoft/yii2": "2.0.*"
+    "yidas/yii2-composer-bower-skip": "~2.0.13",
+    "yiisoft/yii2": "~2.0.13"
   },
   "require-dev": {
     "yiisoft/yii2-apidoc": "2.*",
